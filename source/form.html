@@ -31,12 +31,10 @@
     </div>
   </header>
   <main class="page-main">
-    <div class="title-profile">
-      <div class="title-profile__wrapper">
-        <h1 class="title-profile__title title">Подбор программы</h1>
-        <p class="title-profile__text">Заполните анкету, и мы подберем
-          программу питания для вашего кота</p>
-      </div>
+    <div class="title-profile wrapper">
+      <h1 class="title-profile__title title">Подбор программы</h1>
+      <p class="title-profile__text">Заполните анкету, и мы подберем
+        программу питания для вашего кота</p>
     </div>
     <section class="profile">
       <h2 class="visually-hidden">Анкета для подбора программы</h2>
@@ -44,30 +42,30 @@
         <div class="field-box__wrapper">
           <ul class="field-box__cat-data cat-data">
             <li class="cat-data__item">
-              <label class="cat-data__label" for="cat-name">ИМЯ:<sup class="stars">*</sup></label>
+              <label class="cat-data__label label" for="cat-name">ИМЯ:<sup>*</sup></label>
               <input class="cat-data__input" type="text" id="cat-name" name="cat-name" placeholder="барсик">
             </li>
             <li class="cat-data__item">
-              <label class="cat-data__label" for="cat-weight">Вес (кг):<sup class="stars">*</sup></label>
+              <label class="cat-data__label label" for="cat-weight">Вес (кг):<sup>*</sup></label>
               <input class="cat-data__input" type="text" id="cat-weight" name="cat-weight" placeholder="7">
             </li>
             <li class="cat-data__item">
-              <label class="cat-data__label" for="cat-age">Возраст (лет):</label>
+              <label class="cat-data__label label" for="cat-age">Возраст (лет):</label>
               <input class="cat-data__input" type="text" id="cat-age" name="cat-age" placeholder="7">
             </li>
           </ul>
           <ul class="field-box__options options">
             <li class="options__item">
               <input class="options__input" type="radio" id="weight-loss" name="weight-loss" checked>
-              <label class="options__label" for="weight-loss">похудение</label>
+              <label class="options__label label" for="weight-loss">похудение</label>
             </li>
             <li class="options__item">
               <input class="options__input" type="radio" id="weight-gain" name="weight-gain">
-              <label class="options__label" for="weight-gain">Набор массы</label>
+              <label class="options__label label" for="weight-gain">Набор массы</label>
             </li>
             <li class="options__item">
               <input class="options__input" type="radio" id="need-help" name="need-help">
-              <label class="options__label" for="need-help">Не знаю (Нужен ваш совет)</label>
+              <label class="options__label label" for="need-help">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
         </div>
@@ -77,12 +75,12 @@
           <div class="contacts-fieldset__wrapper">
             <ul class="contacts-fieldset__list">
               <li class="contacts-fieldset__item">
-                <label class="contacts-fieldset__label" for="email">E-mail:<sup class="stars">*</sup></label>
+                <label class="contacts-fieldset__label label" for="email">E-mail:<sup>*</sup></label>
                 <input class="contacts-fieldset__input" type="text" id="email" name="email"
                   placeholder="kuklachev@gmail.com">
               </li>
               <li class="contacts-fieldset__item">
-                <label class="contacts-fieldset__label" for="phone">Телефон:<sup class="stars">*</sup></label>
+                <label class="contacts-fieldset__label label" for="phone">Телефон:<sup>*</sup></label>
                 <input class="contacts-fieldset__input" type="text" id="phone" name="phone"
                   placeholder="8 (960) 900-60-90">
               </li>
@@ -103,26 +101,26 @@
             <ul class="addition-fieldset__list">
               <li class="addition-fieldset__item">
                 <input class="addition-fieldset__input" type="checkbox" id="sweetener" name="sweetener" checked>
-                <label class="addition-fieldset__label" for="sweetener">сахарозаменитель</label>
+                <label class="addition-fieldset__label label" for="sweetener">сахарозаменитель</label>
               </li>
               <li class="addition-fieldset__item">
                 <input class="addition-fieldset__input" type="checkbox" id="water" name="water">
-                <label class="addition-fieldset__label" for="water">питьевая вода</label>
+                <label class="addition-fieldset__label label" for="water">питьевая вода</label>
               </li>
               <li class="addition-fieldset__item">
                 <input class="addition-fieldset__input" type="checkbox" id="milk" name="milk">
-                <label class="addition-fieldset__label" for="milk">молоко</label>
+                <label class="addition-fieldset__label label" for="milk">молоко</label>
               </li>
               <li class="addition-fieldset__item">
                 <input class="addition-fieldset__input" type="checkbox" id="vitamins" name="vitamins">
-                <label class="addition-fieldset__label" for="vitamins">витамины</label>
+                <label class="addition-fieldset__label label" for="vitamins">витамины</label>
               </li>
             </ul>
           </div>
         </fieldset>
         <div class="submit wrapper">
           <button class="submit__button button" type="submit">отправить заявку</button>
-          <p class="submit__text"><sup class="stars">*</sup> — Обязательные поля</p>
+          <p class="submit__text"><sup>*</sup> — Обязательные поля</p>
         </div>
       </form>
     </section>
