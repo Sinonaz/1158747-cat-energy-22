@@ -9,22 +9,22 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo" aria-label="Логотип Кэт энерджи">
+      <a href="index.html" class="page-header__logo" aria-label="Логотип Кэт энерджи">
         <img src="/source/img/logo/logo-mobile.svg" alt="Кэт энерджи" width="34" height="38">
+        <img src="/source/img/logo/footer-logo 2.svg" width="128" height="24" alt="Логотип Кэт энерджи">
       </a>
-      <img src="/source/img/logo/footer-logo 2.svg" width="128" height="24" alt="Логотип Кэт энерджи">
       <nav class="main-nav header__main-nav">
         <button class="main-nav__toggle" type="button" aria-label="Кнопка переключения меню">
         </button>
         <ul class="main-nav__list">
-          <li class="main-nav__list-item main-nav__list-item--active">
-            <a>главная</a>
+          <li class="main-nav__list-item">
+            <a href="index.html">главная</a>
           </li>
           <li class="main-nav__list-item">
             <a href="catalog.html">каталог продукции</a>
           </li>
-          <li class="main-nav__list-item">
-            <a href="programm.html">подбор программы</a>
+          <li class="main-nav__list-item main-nav__list-item--active">
+            <a href="form.html">подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -89,6 +89,7 @@
             <legend class="comment__fieldset-title title">Комментарий</legend>
             <textarea class="comment__fieldset-textarea" name="comment" id="comment" cols="30" rows="10"
               placeholder="Расскажите обо всех повадках кота"></textarea>
+            <label for="comment"></label>
           </fieldset>
           <fieldset class="field-box__fieldset addition__fieldset">
             <legend class="addition__fieldset-title title">Дополнительно</legend>
