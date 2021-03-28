@@ -6,14 +6,14 @@
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
-<body class="page__body">
+<body class="page-body">
   <header class="page-header">
     <div class="page-header__wrapper">
       <a href="index.html" class="page-header__logo" aria-label="Логотип Кэт энерджи">
         <img src="/source/img/logo/logo-mobile.svg" alt="Кэт энерджи" width="34" height="38">
         <img src="/source/img/logo/footer-logo-2.svg" width="128" height="24" alt="Логотип Кэт энерджи">
       </a>
-      <nav class="main-nav header__main-nav">
+      <nav class="main-nav page-header__nav">
         <button class="main-nav__toggle" type="button" aria-label="Кнопка переключения меню">
         </button>
         <ul class="main-nav__list">
@@ -31,24 +31,24 @@
     </div>
   </header>
   <main class="page-main">
-    <section class="title__profile">
-      <div class="title__profile-wrapper">
-        <h1 class="title__profile-title title">Подбор программы</h1>
-        <p class="title__profile-text">Заполните анкету, и мы подберем
+    <div class="title-profile">
+      <div class="title-profile__wrapper">
+        <h1 class="title-profile__title title">Подбор программы</h1>
+        <p class="title-profile__text">Заполните анкету, и мы подберем
           программу питания для вашего кота</p>
       </div>
-    </section>
+    </div>
     <section class="profile">
       <h2 class="visually-hidden">Анкета для подбора программы</h2>
       <div class="profile__wrapper">
         <form class="profile__form field-box" action="https://echo.htmlacademy.ru" method="GET">
           <ul class="field-box__personal-list">
             <li class="field-box__personal-item">
-              <label class="field-box__personal-label" for="cat-name">ИМЯ:*</label>
+              <label class="field-box__personal-label" for="cat-name">ИМЯ:<sup class="stars">*</sup></label>
               <input class="field-box__personal-input" type="text" id="cat-name" name="cat-name" placeholder="барсик">
             </li>
             <li class="field-box__personal-item">
-              <label class="field-box__personal-label" for="cat-weight">Вес (кг):*</label>
+              <label class="field-box__personal-label" for="cat-weight">Вес (кг):<sup class="stars">*</sup></label>
               <input class="field-box__personal-input" type="text" id="cat-weight" name="cat-weight" placeholder="7">
             </li>
             <li class="field-box__personal-item">
@@ -70,51 +70,51 @@
               <label class="field-box__programm-label" for="need-help">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
-          <fieldset class="field-box__fieldset contacts__fieldset">
-            <legend class="contacts__fieldset-title title">Контактные данные
+          <fieldset class="field-box__fieldset contacts-fieldset">
+            <legend class="contacts-fieldset__title title--line title">Контактные данные
               (владельца кота)</legend>
-            <ul class="contacts__fieldset-list">
-              <li class="contacts__fieldset-item">
-                <label class="contacts__fieldset-label" for="email">E-mail:*</label>
-                <input class="contacts__fieldset-input" type="text" id="email" name="email"
+            <ul class="contacts-fieldset__list">
+              <li class="contacts-fieldset__item">
+                <label class="contacts-fieldset__label" for="email">E-mail:<sup class="stars">*</sup></label>
+                <input class="contacts-fieldset__input" type="text" id="email" name="email"
                   placeholder="kuklachev@gmail.com">
               </li>
-              <li class="contacts__fieldset-item">
-                <label class="contacts__fieldset-label" for="phone">Телефон:*</label>
-                <input class="contacts__fieldset-input" type="text" id="phone" name="phone"
+              <li class="contacts-fieldset__item">
+                <label class="contacts-fieldset__label" for="phone">Телефон:<sup class="stars">*</sup></label>
+                <input class="contacts-fieldset__input" type="text" id="phone" name="phone"
                   placeholder="8 (960) 900-60-90">
               </li>
             </ul>
           </fieldset>
-          <fieldset class="field-box__fieldset comment__fieldset">
-            <legend class="comment__fieldset-title title">Комментарий</legend>
-            <textarea class="comment__fieldset-textarea" name="comment" id="comment" cols="30" rows="10"
+          <fieldset class="field-box__fieldset comment-fieldset">
+            <legend class="comment-fieldset__title title--line title">Комментарий</legend>
+            <label class="visually-hidden" for="comment">Текстовое поле для заполнения</label>
+            <textarea class="comment-fieldset__textarea" name="comment" id="comment" cols="30" rows="10"
               placeholder="Расскажите обо всех повадках кота"></textarea>
-            <label for="comment"></label>
           </fieldset>
-          <fieldset class="field-box__fieldset addition__fieldset">
-            <legend class="addition__fieldset-title title">Дополнительно</legend>
-            <ul class="addition__fieldset-list">
-              <li class="addition__fieldset-item">
-                <input class="addition__fieldset-input" type="checkbox" id="sweetener" name="sweetener" checked>
-                <label class="addition__fieldset-label" for="sweetener">сахарозаменитель</label>
+          <fieldset class="field-box__fieldset addition-fieldset">
+            <legend class="addition-fieldset__title title--line title">Дополнительно</legend>
+            <ul class="addition-fieldset__list">
+              <li class="addition-fieldset__item">
+                <input class="addition-fieldset__input" type="checkbox" id="sweetener" name="sweetener" checked>
+                <label class="addition-fieldset__label" for="sweetener">сахарозаменитель</label>
               </li>
-              <li class="addition__fieldset-item">
-                <input class="addition__fieldset-input" type="checkbox" id="water" name="water">
-                <label class="addition__fieldset-label" for="water">питьевая вода</label>
+              <li class="addition-fieldset__item">
+                <input class="addition-fieldset__input" type="checkbox" id="water" name="water">
+                <label class="addition-fieldset__label" for="water">питьевая вода</label>
               </li>
-              <li class="addition__fieldset-item">
-                <input class="addition__fieldset-input" type="checkbox" id="milk" name="milk">
-                <label class="addition__fieldset-label" for="milk">молоко</label>
+              <li class="addition-fieldset__item">
+                <input class="addition-fieldset__input" type="checkbox" id="milk" name="milk">
+                <label class="addition-fieldset__label" for="milk">молоко</label>
               </li>
-              <li class="addition__fieldset-item">
-                <input class="addition__fieldset-input" type="checkbox" id="vitamins" name="vitamins">
-                <label class="addition__fieldset-label" for="vitamins">витамины</label>
+              <li class="addition-fieldset__item">
+                <input class="addition-fieldset__input" type="checkbox" id="vitamins" name="vitamins">
+                <label class="addition-fieldset__label" for="vitamins">витамины</label>
               </li>
             </ul>
           </fieldset>
           <button class="profile__form-button button" type="submit">отправить заявку</button>
-          <p class="profile__form-text">* — Обязательные поля</p>
+          <p class="profile__form-text"><sup class="stars">*</sup> — Обязательные поля</p>
         </form>
       </div>
     </section>
