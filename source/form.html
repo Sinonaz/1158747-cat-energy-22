@@ -40,39 +40,41 @@
     </div>
     <section class="profile">
       <h2 class="visually-hidden">Анкета для подбора программы</h2>
-      <div class="profile__wrapper">
-        <form class="profile__form field-box" action="https://echo.htmlacademy.ru" method="GET">
-          <ul class="field-box__personal-list">
-            <li class="field-box__personal-item">
-              <label class="field-box__personal-label" for="cat-name">ИМЯ:<sup class="stars">*</sup></label>
-              <input class="field-box__personal-input" type="text" id="cat-name" name="cat-name" placeholder="барсик">
+      <form class="profile__form field-box" action="https://echo.htmlacademy.ru" method="GET">
+        <div class="field-box__wrapper">
+          <ul class="field-box__cat-data cat-data">
+            <li class="cat-data__item">
+              <label class="cat-data__label" for="cat-name">ИМЯ:<sup class="stars">*</sup></label>
+              <input class="cat-data__input" type="text" id="cat-name" name="cat-name" placeholder="барсик">
             </li>
-            <li class="field-box__personal-item">
-              <label class="field-box__personal-label" for="cat-weight">Вес (кг):<sup class="stars">*</sup></label>
-              <input class="field-box__personal-input" type="text" id="cat-weight" name="cat-weight" placeholder="7">
+            <li class="cat-data__item">
+              <label class="cat-data__label" for="cat-weight">Вес (кг):<sup class="stars">*</sup></label>
+              <input class="cat-data__input" type="text" id="cat-weight" name="cat-weight" placeholder="7">
             </li>
-            <li class="field-box__personal-item">
-              <label class="field-box__personal-label" for="cat-age">Возраст (лет):</label>
-              <input class="field-box__personal-input" type="text" id="cat-age" name="cat-age" placeholder="7">
-            </li>
-          </ul>
-          <ul class="field-box__programm-list">
-            <li class="field-box__programm-item">
-              <input class="field-box__programm-input" type="radio" id="weight-loss" name="weight-loss" checked>
-              <label class="field-box__programm-label" for="weight-loss">похудение</label>
-            </li>
-            <li class="field-box__programm-item">
-              <input class="field-box__programm-input" type="radio" id="weight-gain" name="weight-gain">
-              <label class="field-box__programm-label" for="weight-gain">Набор массы</label>
-            </li>
-            <li class="field-box__programm-item">
-              <input class="field-box__programm-input" type="radio" id="need-help" name="need-help">
-              <label class="field-box__programm-label" for="need-help">Не знаю (Нужен ваш совет)</label>
+            <li class="cat-data__item">
+              <label class="cat-data__label" for="cat-age">Возраст (лет):</label>
+              <input class="cat-data__input" type="text" id="cat-age" name="cat-age" placeholder="7">
             </li>
           </ul>
-          <fieldset class="field-box__fieldset contacts-fieldset">
-            <legend class="contacts-fieldset__title title--line title">Контактные данные
-              (владельца кота)</legend>
+          <ul class="field-box__options options">
+            <li class="options__item">
+              <input class="options__input" type="radio" id="weight-loss" name="weight-loss" checked>
+              <label class="options__label" for="weight-loss">похудение</label>
+            </li>
+            <li class="options__item">
+              <input class="options__input" type="radio" id="weight-gain" name="weight-gain">
+              <label class="options__label" for="weight-gain">Набор массы</label>
+            </li>
+            <li class="options__item">
+              <input class="options__input" type="radio" id="need-help" name="need-help">
+              <label class="options__label" for="need-help">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </div>
+        <fieldset class="field-box__fieldset contacts-fieldset">
+          <legend class="contacts-fieldset__title title--line title">Контактные данные
+            (владельца кота)</legend>
+          <div class="contacts-fieldset__wrapper">
             <ul class="contacts-fieldset__list">
               <li class="contacts-fieldset__item">
                 <label class="contacts-fieldset__label" for="email">E-mail:<sup class="stars">*</sup></label>
@@ -85,15 +87,19 @@
                   placeholder="8 (960) 900-60-90">
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="field-box__fieldset comment-fieldset">
-            <legend class="comment-fieldset__title title--line title">Комментарий</legend>
+          </div>
+        </fieldset>
+        <fieldset class="field-box__fieldset comment-fieldset">
+          <legend class="comment-fieldset__title title--line title">Комментарий</legend>
+          <div class="comment-fieldset__wrapper">
             <label class="visually-hidden" for="comment">Текстовое поле для заполнения</label>
             <textarea class="comment-fieldset__textarea" name="comment" id="comment" cols="30" rows="10"
               placeholder="Расскажите обо всех повадках кота"></textarea>
-          </fieldset>
-          <fieldset class="field-box__fieldset addition-fieldset">
-            <legend class="addition-fieldset__title title--line title">Дополнительно</legend>
+          </div>
+        </fieldset>
+        <fieldset class="field-box__fieldset addition-fieldset">
+          <legend class="addition-fieldset__title title--line title">Дополнительно</legend>
+          <div class="addition-fieldset__wrapper">
             <ul class="addition-fieldset__list">
               <li class="addition-fieldset__item">
                 <input class="addition-fieldset__input" type="checkbox" id="sweetener" name="sweetener" checked>
@@ -112,11 +118,13 @@
                 <label class="addition-fieldset__label" for="vitamins">витамины</label>
               </li>
             </ul>
-          </fieldset>
-          <button class="profile__form-button button" type="submit">отправить заявку</button>
-          <p class="profile__form-text"><sup class="stars">*</sup> — Обязательные поля</p>
-        </form>
-      </div>
+          </div>
+        </fieldset>
+        <div class="submit wrapper">
+          <button class="submit__button button" type="submit">отправить заявку</button>
+          <p class="submit__text"><sup class="stars">*</sup> — Обязательные поля</p>
+        </div>
+      </form>
     </section>
     <section class="adress">
       <h2 class="visually-hidden">Наш адрес</h2>
