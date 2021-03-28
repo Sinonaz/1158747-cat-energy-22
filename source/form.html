@@ -41,18 +41,32 @@
     <section class="profile">
       <div class="profile__wrapper">
         <form class="profile__form field-box" action="https://echo.htmlacademy.ru" method="GET">
-          <ul class="field-box__list">
-            <li class="field-box__item">
-              <label class="field-box__label" for="cat-name">ИМЯ:*</label>
-              <input class="field-box__input" type="text" id="cat-name" name="cat-name">
+          <ul class="field-box__personal-list">
+            <li class="field-box__personal-item">
+              <label class="field-box__personal-label" for="cat-name">ИМЯ:*</label>
+              <input class="field-box__personal-input" type="text" id="cat-name" name="cat-name">
             </li>
-            <li class="field-box__item">
-              <label class="field-box__label" for="cat-weight">Вес (кг):*</label>
-              <input class="field-box__input" type="text" id="cat-weight" name="cat-weight">
+            <li class="field-box__personal-item">
+              <label class="field-box__personal-label" for="cat-weight">Вес (кг):*</label>
+              <input class="field-box__personal-input" type="text" id="cat-weight" name="cat-weight">
             </li>
-            <li class="field-box__item">
-              <label class="field-box__label" for="cat-age">Возраст (лет):</label>
-              <input class="field-box__input" type="text" id="cat-age" name="cat-age">
+            <li class="field-box__personal-item">
+              <label class="field-box__personal-label" for="cat-age">Возраст (лет):</label>
+              <input class="field-box__personal-input" type="text" id="cat-age" name="cat-age">
+            </li>
+          </ul>
+          <ul class="field-box__programm-list">
+            <li class="field-box__programm-item">
+              <input class="field-box__programm-input" type="radio" id="weight-loss" name="weight-loss" checked>
+              <label class="field-box__programm-label" for="weight-loss">похудение</label>
+            </li>
+            <li class="field-box__programm-item">
+              <input class="field-box__programm-input" type="radio" id="weight-gain" name="weight-gain">
+              <label class="field-box__programm-label" for="weight-gain">Набор массы</label>
+            </li>
+            <li class="field-box__programm-item">
+              <input class="field-box__programm-input" type="radio" id="need-help" name="need-help">
+              <label class="field-box__programm-label" for="need-help">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
         </form>
