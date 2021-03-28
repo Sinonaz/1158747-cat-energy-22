@@ -44,15 +44,15 @@
           <ul class="field-box__personal-list">
             <li class="field-box__personal-item">
               <label class="field-box__personal-label" for="cat-name">ИМЯ:*</label>
-              <input class="field-box__personal-input" type="text" id="cat-name" name="cat-name">
+              <input class="field-box__personal-input" type="text" id="cat-name" name="cat-name" placeholder="барсик">
             </li>
             <li class="field-box__personal-item">
               <label class="field-box__personal-label" for="cat-weight">Вес (кг):*</label>
-              <input class="field-box__personal-input" type="text" id="cat-weight" name="cat-weight">
+              <input class="field-box__personal-input" type="text" id="cat-weight" name="cat-weight" placeholder="7">
             </li>
             <li class="field-box__personal-item">
               <label class="field-box__personal-label" for="cat-age">Возраст (лет):</label>
-              <input class="field-box__personal-input" type="text" id="cat-age" name="cat-age">
+              <input class="field-box__personal-input" type="text" id="cat-age" name="cat-age" placeholder="7">
             </li>
           </ul>
           <ul class="field-box__programm-list">
@@ -69,6 +69,22 @@
               <label class="field-box__programm-label" for="need-help">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
+          <fieldset class="field-box__fieldset contacts__fieldset">
+            <legend class="contacts__fieldset-title title">Контактные данные
+              (владельца кота)</legend>
+            <ul class="contacts__fieldset-list">
+              <li class="contacts__fieldset-item">
+                <label class="contacts__fieldset-label" for="email">E-mail:*</label>
+                <input class="contacts__fieldset-input" type="text" id="email" name="email"
+                  placeholder="kuklachev@gmail.com">
+              </li>
+              <li class="contacts__fieldset-item">
+                <label class="contacts__fieldset-label" for="phone">Телефон:*</label>
+                <input class="contacts__fieldset-input" type="text" id="phone" name="phone"
+                  placeholder="8 (960) 900-60-90">
+              </li>
+            </ul>
+          </fieldset>
         </form>
       </div>
     </section>
