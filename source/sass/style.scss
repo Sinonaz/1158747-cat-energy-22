@@ -1,4 +1,11 @@
-// Начните писать стили здесь
-@import "variables";
-@import "mixins";
-@import "blocks/page-header";
+// GLOBAL
+
+@import "variables.scss";
+@import "global.scss";
+@import "reset.scss";
+@import "mixins.scss";
+
+// BLOCKS
+
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
