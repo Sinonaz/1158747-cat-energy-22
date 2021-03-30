@@ -1,0 +1,24 @@
+.service {
+  background-color: $default-green-color;
+  opacity: 85;
+
+  &__wrapper {
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $default-white-color;
+  }
+
+  &__text {
+    line-height: 1;
+    text-transform: uppercase;
+    color: $default-white-color;
+  }
+
+  &__button {
+  }
+}
