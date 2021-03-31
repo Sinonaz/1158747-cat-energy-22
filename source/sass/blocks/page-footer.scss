@@ -1,0 +1,22 @@
+.page-footer {
+  background-color: $default-gray-color;
+		&__wrapper {
+		}
+
+		&__social {
+		}
+
+		&__social-item {
+		}
+
+		&__copyright {
+		}
+
+		&__copyright-text {
+      font-family: "Arial", sans-serif;
+      font-size: 16px;
+      line-height: 1.12;
+      text-transform: none;
+      color: $default-text-color;
+		}
+}
