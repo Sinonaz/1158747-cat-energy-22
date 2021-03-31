@@ -1,0 +1,21 @@
+.advantages {
+
+		&__wrapper {
+		}
+
+		&__title {
+
+		}
+
+		&__list {
+		}
+
+		&__item:not(:last-child) {
+      margin-bottom: 20px;
+		}
+
+		&__text {
+      width: 199px;
+		}
+}
+

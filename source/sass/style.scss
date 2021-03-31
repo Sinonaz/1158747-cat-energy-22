@@ -1,7 +1,12 @@
 // GLOBAL
 
 @import "variables.scss";
-@import "global.scss";
+@import "global/fonts.scss";
+@import "global/page.scss";
+@import "global/visually-hidden.scss";
+@import "global/button.scss";
+@import "global/title.scss";
+@import "global/text.scss";
 @import "reset.scss";
 @import "mixins.scss";
 
@@ -11,3 +16,4 @@
 @import "blocks/main-nav.scss";
 @import "blocks/service.scss";
 @import "blocks/programm.scss";
+@import "blocks/advantages.scss";
