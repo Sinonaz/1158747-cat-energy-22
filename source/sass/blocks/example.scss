@@ -1,0 +1,71 @@
+.example {
+    background-color: $dark-gray-color;
+		&__wrapper {
+		}
+
+		&__title {
+		}
+
+		&__calculations {
+		}
+
+		&__result {
+		}
+
+		&__results-was {
+      font-size: 16px;
+      line-height: 1.25;
+      text-transform: uppercase;
+      color: $default-black-color;
+		}
+
+		&__results-bar {
+		}
+
+		&__results-toggle {
+		}
+
+		&__results-became {
+      font-size: 16px;
+      line-height: 1.25;
+      text-transform: uppercase;
+      color: $default-black-color;
+		}
+}
+
+.calculations {
+
+		&__weight-loss {
+		}
+
+		&__number {
+      font-size: 24px;
+      line-height: 1;
+      text-transform: uppercase;
+      color: $default-black-color;
+		}
+
+		&__text {
+      font-family: "Arial", sans-serif;
+      font-size: 12px;
+      line-height: 1;
+		}
+
+		&__time-spent {
+		}
+}
+.calculation {
+
+		&__description {
+      width: 280px;
+		}
+
+		&__food-costs {
+		}
+
+		&__food-costs-text {
+      line-height: 1.43;
+      text-transform: uppercase;
+      color: $default-black-color;
+		}
+}
