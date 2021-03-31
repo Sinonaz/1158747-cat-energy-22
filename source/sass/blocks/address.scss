@@ -1,26 +1,14 @@
 .adress {
+  &__block {
+    display: flex;
+    padding: 28px 0 28px 0;
+  }
 
-		&__wrapper {
-
-		}
-
-		&__block {
-      display: flex;
-      padding: 28px 0 28px 0;
-		}
-
-		&__block-text {
-      font-size: 16px;
-      line-height: 1.12;
-      text-transform: uppercase;
-      color: $default-black-color;
-      width: 140px;
-		}
-
-		&__block-town {
-		}
-
-		&__map {
-		}
+  &__block-text {
+    font-size: 16px;
+    line-height: 1.12;
+    text-transform: uppercase;
+    color: $default-black-color;
+    width: 140px;
+  }
 }
-
