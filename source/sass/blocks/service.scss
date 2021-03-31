@@ -1,7 +1,7 @@
 .service {
   background-color: $default-green-color;
-  opacity: 85;
-
+  background-image: url("/source/img/index-background-mob.jpg");
+  background-repeat: no-repeat;
   &__wrapper {
   }
 
