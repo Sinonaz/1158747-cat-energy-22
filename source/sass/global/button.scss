@@ -2,5 +2,10 @@
   background-color: $default-green-color;
   width: 280px;
   color: $default-white-color;
-  text-transform: uppercase;
+  display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1.29;
+	text-transform: uppercase;
+	text-align: center;
 }

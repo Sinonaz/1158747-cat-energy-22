@@ -10,5 +10,10 @@
     line-height: 1;
     font-weight: 500;
     text-transform: uppercase;
+    padding-top: 22px;
+  }
+
+  &__list-item:last-child {
+    padding-bottom: 24px;
   }
 }

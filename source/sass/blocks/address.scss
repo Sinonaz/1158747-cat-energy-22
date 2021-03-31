@@ -1,9 +1,12 @@
 .adress {
 
 		&__wrapper {
+
 		}
 
 		&__block {
+      display: flex;
+      padding: 28px 0 28px 0;
 		}
 
 		&__block-text {

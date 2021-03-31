@@ -1,15 +1,18 @@
 .example {
-    background-color: $dark-gray-color;
+  background-color: $dark-gray-color;
+  margin-top: 42px;
 		&__wrapper {
 		}
 
 		&__title {
+      padding: 27px 0 33px 0;
 		}
 
 		&__calculations {
 		}
 
 		&__result {
+      padding-bottom: 25px;
 		}
 
 		&__results-was {
@@ -43,6 +46,7 @@
       line-height: 1;
       text-transform: uppercase;
       color: $default-black-color;
+      padding: 14px 0 14px 0;
 		}
 
 		&__text {
@@ -58,6 +62,7 @@
 
 		&__description {
       width: 280px;
+      margin-bottom: 25px;
 		}
 
 		&__food-costs {
@@ -67,5 +72,6 @@
       line-height: 1.43;
       text-transform: uppercase;
       color: $default-black-color;
+      margin-top: 25px;
 		}
 }

@@ -1,15 +1,25 @@
 .page-footer {
   background-color: $default-gray-color;
 		&__wrapper {
+
 		}
 
+    &__logo {
+      padding: 40px 0 30px 0;
+    }
+
 		&__social {
+      display: flex;
+      border-top: 1px solid $line-color;
+      border-bottom: 1px solid $line-color;
+      padding: 20px 0 20px 0;
 		}
 
 		&__social-item {
 		}
 
 		&__copyright {
+      padding: 22px 0 22px 0;
 		}
 
 		&__copyright-text {
