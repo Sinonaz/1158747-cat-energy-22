@@ -3,20 +3,22 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
-<body class="page-body">
+<body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
       <a href="index.html" class="page-header__logo" aria-label="Логотип Кэт энерджи">
-        <img src="/source/img/logo/logo-mobile.svg" alt="Кэт энерджи" width="34" height="38">
+        <img src="/source/img/logo/logo-mobile.svg" width="33" height="37" alt="Кэт энерджи" width="34" height="38">
         <img src="/source/img/logo/footer-logo-2.svg" width="128" height="24" alt="Логотип Кэт энерджи">
       </a>
       <nav class="main-nav page-header__nav">
         <button class="main-nav__toggle" type="button" aria-label="Кнопка переключения меню">
         </button>
-        <ul class="main-nav__list">
+        <ul class="main-nav__list list">
           <li class="main-nav__list-item">
             <a href="index.html">главная</a>
           </li>
@@ -40,7 +42,7 @@
       <h2 class="visually-hidden">Анкета для подбора программы</h2>
       <form class="profile__form field-box" action="https://echo.htmlacademy.ru" method="GET">
         <div class="field-box__wrapper">
-          <ul class="field-box__cat-data cat-data">
+          <ul class="field-box__cat-data cat-data list">
             <li class="cat-data__item">
               <label class="cat-data__label label" for="cat-name">ИМЯ:<sup>*</sup></label>
               <input class="cat-data__input" type="text" id="cat-name" name="cat-name" placeholder="барсик">
@@ -54,7 +56,7 @@
               <input class="cat-data__input" type="text" id="cat-age" name="cat-age" placeholder="7">
             </li>
           </ul>
-          <ul class="field-box__options options">
+          <ul class="field-box__options options list">
             <li class="options__item">
               <input class="options__input" type="radio" id="weight-loss" name="weight-loss" checked>
               <label class="options__label label" for="weight-loss">похудение</label>
@@ -73,7 +75,7 @@
           <legend class="contacts-fieldset__title title--line title">Контактные данные
             (владельца кота)</legend>
           <div class="contacts-fieldset__wrapper">
-            <ul class="contacts-fieldset__list">
+            <ul class="contacts-fieldset__list list">
               <li class="contacts-fieldset__item">
                 <label class="contacts-fieldset__label label" for="email">E-mail:<sup>*</sup></label>
                 <input class="contacts-fieldset__input" type="text" id="email" name="email"
@@ -98,7 +100,7 @@
         <fieldset class="field-box__fieldset addition-fieldset">
           <legend class="addition-fieldset__title title--line title">Дополнительно</legend>
           <div class="addition-fieldset__wrapper">
-            <ul class="addition-fieldset__list">
+            <ul class="addition-fieldset__list list">
               <li class="addition-fieldset__item">
                 <input class="addition-fieldset__input" type="checkbox" id="sweetener" name="sweetener" checked>
                 <label class="addition-fieldset__label label" for="sweetener">сахарозаменитель</label>
@@ -131,7 +133,7 @@
           <p class="adress__block-text">приглашаем
             к сотрудничеству
             дилеров!</p>
-          <address>ул. Большая Конюшенная, д. 19/8
+          <address class="address-text">ул. Большая Конюшенная, д. 19/8
             <span class="adress__block-town">Санкт-Петербург</span>
           </address>
         </div>
@@ -144,7 +146,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <img src="/source/img/logo/footer-logo-2.svg" width="128" height="24" alt="Логотип Кэт энерджи">
-      <ul class="page-footer__social">
+      <ul class="page-footer__social list">
         <li class="page-footer__social-item">
           <a href="#" aria-label="Вконтакте"></a>
         </li>
@@ -156,8 +158,8 @@
         </li>
       </ul>
       <div class="page-footer__copyright">
-        <a href="#" class="page-footer__copyright-text" aria-label="HTML Academy">HTML Academy<img
-            src="/source/img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy"></a>
+        <a href="#" class="page-footer__copyright-text">HTML Academy<img src="/source/img/htmlacademy.svg" width="27"
+            height="34" alt="Логотип HTML Academy"></a>
       </div>
     </div>
   </footer>

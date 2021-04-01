@@ -1,0 +1,11 @@
+.button {
+  background-color: $default-green-color;
+  max-width: 280px;
+  color: $default-white-color;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.29;
+  text-transform: uppercase;
+  text-align: center;
+}

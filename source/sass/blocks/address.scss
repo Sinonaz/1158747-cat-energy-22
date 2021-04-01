@@ -1,0 +1,12 @@
+.adress__block {
+  display: flex;
+  padding: 28px 0 28px 0;
+}
+
+.adress__block-text {
+  font-size: 16px;
+  line-height: 1.12;
+  text-transform: uppercase;
+  color: $default-black-color;
+  max-width: 140px;
+}

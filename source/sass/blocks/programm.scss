@@ -1,0 +1,30 @@
+.programm {
+  margin-top: 22px;
+}
+
+.programm__weight-loss {
+  background-color: $default-gray-color;
+}
+
+.programm__title {
+  font-size: 24px;
+  line-height: 1.37;
+  color: $default-black-color;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 35px 0 30px 0;
+}
+
+.programm__description {
+  max-width: 227px;
+  margin-bottom: 36px;
+}
+
+.programm__weight-gain {
+  background-color: $default-gray-color;
+}
+
+.programm__button {
+  font-size: 16px;
+  line-height: 1;
+}

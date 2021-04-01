@@ -1,0 +1,48 @@
+// LISTS
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+// BOX-SIZING
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// IMAGES
+
+img {
+  max-width: 100%;
+}
+
+// LINKS
+
+a {
+  text-decoration: none;
+  color: $default-black-color;
+  text-transform: uppercase;
+}
+
+// TEXT
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  margin: 0;
+  padding: 0;
+}
+
+.address-text {
+  font-family: "Arial", sans-serif;
+  list-style: 1.43;
+  font-style: normal;
+  width: 140px;
+}
