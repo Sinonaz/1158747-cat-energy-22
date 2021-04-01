@@ -1,83 +1,79 @@
 .example {
   background-color: $dark-gray-color;
   margin-top: 42px;
-
-  &__title {
-    padding: 27px 0 33px 0;
-  }
-
-  &__result {
-    padding-bottom: 25px;
-  }
-
-  &__results-was {
-    font-size: 16px;
-    line-height: 1.25;
-    text-transform: uppercase;
-    color: $default-black-color;
-  }
-
-  &__results-became {
-    font-size: 16px;
-    line-height: 1.25;
-    text-transform: uppercase;
-    color: $default-black-color;
-  }
 }
 
-.calculations {
-  &__weight-loss {
-    position: relative;
-    width: 124px;
-  }
-
-  &__number {
-    font-size: 24px;
-    line-height: 1;
-    text-transform: uppercase;
-    color: $default-black-color;
-    padding: 14px 0 14px 0;
-    border: 1px solid $border-color;
-    border-radius: 3px;
-    text-align: center;
-  }
-
-  &__text {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -5px;
-    font-family: "Arial", sans-serif;
-    font-size: 12px;
-    line-height: 1;
-    width: 115px;
-    padding: 0;
-    text-align: center;
-    background-color: $dark-gray-color;
-  }
-
-  &__time-spent {
-    position: relative;
-    width: 124px;
-  }
+.example__title {
+  padding: 27px 0 33px 0;
 }
 
-.calculation {
-  &__description {
-    width: 280px;
-    margin-bottom: 25px;
-  }
+.example__result {
+  padding-bottom: 25px;
+}
 
-  &__stast-list {
-    display: flex;
-    justify-content: space-between;
-    width: 280px;
-  }
+.example__results-was {
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: $default-black-color;
+}
 
-  &__food-costs-text {
-    line-height: 1.43;
-    text-transform: uppercase;
-    color: $default-black-color;
-    margin-top: 25px;
-  }
+.example__results-became {
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: $default-black-color;
+}
+
+.calculations__weight-loss {
+  position: relative;
+  width: 124px;
+}
+
+.calculations__number {
+  font-size: 24px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $default-black-color;
+  padding: 14px 0 14px 0;
+  border: 1px solid $border-color;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.calculations__text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  width: 115px;
+  padding: 0;
+  text-align: center;
+  background-color: $dark-gray-color;
+}
+
+.calculations__time-spent {
+  position: relative;
+  width: 124px;
+}
+
+.calculations__description {
+  width: 280px;
+  margin-bottom: 25px;
+}
+
+.calculations__stast-list {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+}
+
+.calculations__food-costs-text {
+  line-height: 1.43;
+  text-transform: uppercase;
+  color: $default-black-color;
+  margin-top: 25px;
 }

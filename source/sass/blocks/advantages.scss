@@ -1,15 +1,15 @@
 .advantages {
   margin-top: 27px;
+}
 
-  &__list {
-    margin-top: 37px;
-  }
+.advantages__list {
+  margin-top: 37px;
+}
 
-  &__item:not(:last-child) {
-    margin-bottom: 20px;
-  }
+.advantages__item:not(:last-child) {
+  margin-bottom: 20px;
+}
 
-  &__text {
-    width: 199px;
-  }
+.advantages__text {
+  width: 199px;
 }

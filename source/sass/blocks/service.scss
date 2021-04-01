@@ -2,23 +2,23 @@
   background-color: $default-green-color;
   background-image: url("/source/img/index-background-mob.jpg");
   background-repeat: no-repeat;
+}
 
-  &__title {
-    font-size: 36px;
-    line-height: 1;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: $default-white-color;
-    padding: 27px 0 25px 0;
-  }
+.service__title {
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $default-white-color;
+  padding: 27px 0 25px 0;
+}
 
-  &__text {
-    line-height: 1;
-    text-transform: uppercase;
-    color: $default-white-color;
-  }
+.service__text {
+  line-height: 1;
+  text-transform: uppercase;
+  color: $default-white-color;
+}
 
-  &__button {
-    margin-top: 50px;
-  }
+.service__button {
+  margin-top: 50px;
 }
