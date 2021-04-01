@@ -49,7 +49,7 @@
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 1;
-  width: 115px;
+  max-width: 115px;
   padding: 0;
   text-align: center;
   background-color: $dark-gray-color;
@@ -57,18 +57,18 @@
 
 .calculations__time-spent {
   position: relative;
-  width: 124px;
+  max-width: 124px;
 }
 
 .calculations__description {
-  width: 280px;
+  max-width: 280px;
   margin-bottom: 25px;
 }
 
 .calculations__stast-list {
   display: flex;
   justify-content: space-between;
-  width: 280px;
+  max-width: 280px;
 }
 
 .calculations__food-costs-text {
