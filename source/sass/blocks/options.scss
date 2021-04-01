@@ -1,0 +1,7 @@
+.options__item:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.options__label {
+  color: $default-black-color;
+}
