@@ -7,8 +7,10 @@
 @import "global/button.scss";
 @import "global/title.scss";
 @import "global/text.scss";
+@import "global/label.scss";
+@import "global/fieldset-legend.scss";
+@import "global/field-input.scss";
 @import "reset.scss";
-@import "mixins.scss";
 
 // BLOCKS
 
@@ -20,3 +22,12 @@
 @import "blocks/example.scss";
 @import "blocks/address.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/title-profile.scss";
+@import "blocks/profile.scss";
+@import "blocks/field-box.scss";
+@import "blocks/options.scss";
+@import "blocks/cat-data.scss";
+@import "blocks/addition-fieldset.scss";
+@import "blocks/comment-fieldset.scss";
+@import "blocks/submit.scss";
+@import "blocks/contacts-fieldset.scss";
