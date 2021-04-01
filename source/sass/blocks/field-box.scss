@@ -1,24 +1,3 @@
-.cat-data__item {
-  margin-bottom: 13px;
-}
-
-.cat-data__input {
-  max-width: 229px;
-  padding: 13px 15px 13px 15px;
-  font-size: 16px;
-  line-height: 1.12;
-  text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
-
-  &::placeholder {
-    color: $default-text-color;
-  }
-
-  &:active::placeholder {
-    opacity: 0;
-  }
-
-  &:focus::placeholder {
-    opacity: 0;
-  }
+.field-box__fieldset {
+  margin-top: 23px;
 }
