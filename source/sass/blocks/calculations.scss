@@ -3,15 +3,33 @@
   margin-bottom: 25px;
 }
 
+.calculation__stats {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: wrap;
+  }
+}
+
 .calculation__stats-list {
   display: flex;
   justify-content: space-between;
-  max-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 366px;
+  }
 }
 
-.calculations__weight-loss {
+.calculations__stats-list-block {
   position: relative;
   min-width: 124px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 162px;
+  }
 }
 
 .calculations__number {
@@ -40,17 +58,22 @@
   background-color: $dark-gray-color;
 }
 
-.calculations__time-spent {
-  position: relative;
-  min-width: 124px;
-}
-
 .calculation__food-costs {
   margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 107px;
+    align-items: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 327px;
+  }
 }
 
 .calculations__food-costs-text {
   line-height: 1.43;
   text-transform: uppercase;
   color: $default-black-color;
+  width: 100%;
 }
