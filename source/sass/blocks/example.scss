@@ -3,8 +3,36 @@
   margin-top: 42px;
 }
 
+.example__wrapper {
+  width: $mobile-width;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    min-width: $tablet-width;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: $desktop-width;
+    padding: 0 110px;
+  }
+}
+
 .example__title {
   padding: 27px 0 33px 0;
+}
+
+.example__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.example__calculations {
+  @media (min-width: $desktop-width) {
+    max-width: 436px;
+  }
 }
 
 .example__result {
