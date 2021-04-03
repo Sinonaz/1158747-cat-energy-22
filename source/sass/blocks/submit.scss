@@ -1,6 +1,39 @@
+.submit {
+  width: $mobile-width;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    min-width: $tablet-width;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: $desktop-width;
+    padding: 0 110px;
+  }
+}
+
+.submit__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 523px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 829px;
+  }
+}
+
 .submit__button {
   margin-top: 35px;
   margin-bottom: 21px;
+
+  @media (min-width: $desktop-width) {
+    min-width: 568px;
+  }
 }
 
 .submit__text {

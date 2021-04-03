@@ -1,5 +1,38 @@
+.addition-fieldset__wrapper {
+  width: $mobile-width;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    min-width: $tablet-width;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: $desktop-width;
+    padding: 0 110px;
+  }
+}
+
+.addition-fieldset__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 532px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+  }
+}
+
 .addition-fieldset__item {
   margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 221px;
+  }
 }
 
 .addition-fieldset__label {
