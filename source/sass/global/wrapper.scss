@@ -1,4 +1,4 @@
-.field-box__wrapper {
+.wrapper {
   width: $mobile-width;
   padding: 0 20px;
   margin: 0 auto;
@@ -11,11 +11,5 @@
   @media (min-width: $desktop-width) {
     min-width: $desktop-width;
     padding: 0 110px;
-    display: flex;
-    justify-content: space-between;
   }
-}
-
-.field-box__fieldset {
-  margin-top: 23px;
 }
