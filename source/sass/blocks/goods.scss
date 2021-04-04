@@ -1,7 +1,23 @@
+.goods {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
 .goods__item {
   border-top: 1px solid $goods-border-color;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 245px;
+  }
 }
 
 .goods__item-title {
