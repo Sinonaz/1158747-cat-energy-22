@@ -1,8 +1,4 @@
-.catalog__title {
-  margin-bottom: 40px;
-}
-
-.catalog__wrapper {
+.addition-goods__wrapper {
   width: $mobile-width;
   padding: 0 20px;
   margin: 0 auto;
@@ -10,10 +6,14 @@
   @media (min-width: $tablet-width) {
     min-width: $tablet-width;
     padding: 0 30px;
+    display: flex;
+    flex-direction: column;
   }
 
   @media (min-width: $desktop-width) {
     min-width: $desktop-width;
     padding: 0 110px;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
