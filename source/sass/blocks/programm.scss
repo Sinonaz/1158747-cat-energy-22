@@ -3,12 +3,16 @@
 }
 
 .programm__wrapper {
-  width: $mobile-width;
+  min-width: $mobile-width;
+  max-width: $tablet-width;
+  width: 100%;
   padding: 0 20px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     min-width: $tablet-width;
+    max-width: $desktop-width;
+    width: 100%;
     padding: 0 30px;
   }
 
@@ -23,13 +27,16 @@
 .programm__weight {
   background-color: $default-gray-color;
   min-width: 280px;
+  padding: 21px 20px 21px 20px;
 
   @media (min-width: $tablet-width) {
     min-width: 708px;
+    padding: 77px 62px 57px 52px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 570px;
+    padding: 41px 51px 59px 52px;
   }
 }
 
@@ -47,20 +54,90 @@
 }
 
 .programm__title {
+  position: relative;
   font-size: 24px;
   line-height: 1.37;
   color: $default-black-color;
   text-transform: uppercase;
   font-weight: 400;
-  padding: 35px 0 30px 0;
+  margin-bottom: 30px;
+  padding-left: 70px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -8px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: $default-green-color;
+    border-radius: 50%;
+  }
+
+  &--slim::after {
+    position: absolute;
+    content: "";
+    top: -11px;
+    left: 7px;
+    width: 36px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-image: url("../../img/icon/cat-1-mob.svg");
+  }
+
+  &--gain::after {
+    position: absolute;
+    content: "";
+    top: 2px;
+    left: -11px;
+    width: 67px;
+    height: 28px;
+    background-repeat: no-repeat;
+    background-image: url("../../img/icon/cat-2-mob.svg");
+  }
 }
 
 .programm__description {
-  max-width: 227px;
+  position: relative;
+  min-width: 227px;
+  max-width: 377px;
+  width: 100%;
   margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.5;
+    color: $default-black-color;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -17px;
+    left: 0;
+    min-width: 240px;
+    max-width: $tablet-width;
+    width: 100%;
+    height: 1px;
+    background-color: $line-color;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .programm__button {
   font-size: 16px;
   line-height: 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }
