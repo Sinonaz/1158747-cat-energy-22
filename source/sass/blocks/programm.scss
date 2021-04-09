@@ -27,16 +27,20 @@
 .programm__weight {
   background-color: $default-gray-color;
   min-width: 280px;
-  padding: 21px 20px 21px 20px;
+  min-height: 266px;
+  padding-top: 45px;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     min-width: 708px;
-    padding: 77px 62px 57px 52px;
+    min-height: 372px;
+    padding-top: 80px;
+    padding-left: 52px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 570px;
-    padding: 41px 51px 59px 52px;
+    min-height: 374px;
   }
 }
 
@@ -66,6 +70,12 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 1;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 162px;
+    margin-bottom: 73px;
   }
 
   &::before {
@@ -77,6 +87,20 @@
     height: 50px;
     background-color: $default-green-color;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 200px;
+      height: 200px;
+      top: 5px;
+      left: 390px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 100px;
+      top: -37px;
+      left: 0px;
+    }
   }
 
   &--slim::after {
@@ -88,6 +112,22 @@
     height: 50px;
     background-repeat: no-repeat;
     background-image: url("../../img/icon/cat-1-mob.svg");
+
+    @media (min-width: $tablet-width) {
+      width: 140px;
+      height: 192px;
+      top: -5px;
+      left: 414px;
+      background-image: url("../../img/icon/cat-1-tab.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 70px;
+      height: 97px;
+      top: -40px;
+      left: 16px;
+      background-image: url("../../img/icon/cat-1-des.svg");
+    }
   }
 
   &--gain::after {
@@ -99,6 +139,22 @@
     height: 28px;
     background-repeat: no-repeat;
     background-image: url("../../img/icon/cat-2-mob.svg");
+
+    @media (min-width: $tablet-width) {
+      width: 268px;
+      height: 112px;
+      top: 48px;
+      left: 354px;
+      background-image: url("../../img/icon/cat-2-tab.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 134px;
+      height: 56px;
+      top: -17px;
+      left: -18px;
+      background-image: url("../../img/icon/cat-2-des.svg");
+    }
   }
 }
 
@@ -107,12 +163,16 @@
   min-width: 227px;
   max-width: 377px;
   width: 100%;
-  margin-bottom: 36px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 1.5;
     color: $default-black-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 467px;
   }
 
   &::after {
@@ -135,6 +195,7 @@
 .programm__button {
   font-size: 16px;
   line-height: 1;
+  margin-top: auto;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
