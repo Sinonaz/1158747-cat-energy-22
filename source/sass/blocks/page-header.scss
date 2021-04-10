@@ -1,5 +1,6 @@
 .page-header {
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .page-header__wrapper {
@@ -37,5 +38,13 @@
 
   @media (min-width: $desktop-width) {
     min-width: 202px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }

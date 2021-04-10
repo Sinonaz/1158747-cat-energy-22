@@ -1,7 +1,5 @@
 .service {
   background-color: $default-green-color;
-  background-image: url("/source/img/index-background-mob.jpg");
-  background-repeat: no-repeat;
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
@@ -23,6 +21,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     min-width: $tablet-width;
@@ -30,6 +29,7 @@
     width: 100%;
     padding: 0 30px;
     align-items: flex-start;
+    text-align: start;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,12 +44,15 @@
   font-weight: 300;
   color: $default-white-color;
   padding: 0 0 25px 0;
-  max-width: 249px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 1;
     color: $default-black-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 414px;
   }
 }
 
@@ -70,5 +73,13 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1;
+  }
+
+  &:hover {
+    background-color: $green-hover-color;
+  }
+
+  &:active {
+    color: $text-active-color;
   }
 }
