@@ -1,10 +1,14 @@
 .adress__wrapper {
-  width: $mobile-width;
+  min-width: $mobile-width;
+  max-width: $tablet-width;
+  width: 100%;
   padding: 0 20px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     min-width: $tablet-width;
+    max-width: $desktop-width;
+    width: 100%;
     padding: 0 30px;
   }
 
@@ -16,6 +20,7 @@
 
 .adress__block {
   display: flex;
+  justify-content: space-between;
   padding: 28px 0 28px 0;
 }
 
@@ -25,4 +30,20 @@
   text-transform: uppercase;
   color: $default-black-color;
   max-width: 140px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.05;
+  }
+}
+
+.address-text {
+  line-height: 1.43;
+  max-width: 140px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.25;
+    min-width: 160px;
+  }
 }

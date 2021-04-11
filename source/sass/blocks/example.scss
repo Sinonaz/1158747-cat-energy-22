@@ -1,31 +1,45 @@
 .example {
   background-color: $dark-gray-color;
   margin-top: 42px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $default-white-color;
+  }
 }
 
 .example__wrapper {
-  width: $mobile-width;
+  min-width: $mobile-width;
+  max-width: $tablet-width;
+  width: 100%;
   padding: 0 20px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     min-width: $tablet-width;
+    max-width: $desktop-width;
+    width: 100%;
     padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: $desktop-width;
     padding: 0 110px;
+    background-color: $default-gray-color;
   }
 }
 
 .example__title {
   padding: 27px 0 33px 0;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 63px;
+  }
 }
 
 .example__container {
   @media (min-width: $desktop-width) {
     display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -35,8 +49,28 @@
   }
 }
 
-.example__result {
+.example__results {
   padding-bottom: 25px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 320px;
+  }
+}
+
+.example__img {
+  display: block;
+  margin: 42px auto 23px auto;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 60px;
+  }
+}
+
+.example__slider {
+  max-width: 228px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
 }
 
 .example__results-was {

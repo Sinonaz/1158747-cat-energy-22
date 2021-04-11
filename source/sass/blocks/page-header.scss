@@ -1,9 +1,12 @@
 .page-header {
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .page-header__wrapper {
-  width: $mobile-width;
+  min-width: $mobile-width;
+  max-width: $tablet-width;
+  width: 100%;
   padding: 0 20px;
   margin: 0 auto;
 
@@ -11,6 +14,8 @@
     display: flex;
     align-items: center;
     min-width: $tablet-width;
+    max-width: $desktop-width;
+    width: 100%;
     padding: 0 30px;
   }
 
@@ -23,4 +28,23 @@
 
 .page-header__logo {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 190px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 175px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 202px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
