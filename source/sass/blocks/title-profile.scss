@@ -1,5 +1,11 @@
 .title-profile__text {
   line-height: 1.29;
   color: $default-black-color;
-  max-width: 226px;
+  max-width: 323px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }

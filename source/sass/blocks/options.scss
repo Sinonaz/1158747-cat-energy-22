@@ -1,5 +1,20 @@
+.options {
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 25px 20px;
+  border: 1px solid $options-border;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 569px;
+  }
+}
+
 .options__item:not(:last-child) {
-  margin-bottom: 13px;
+  margin-bottom: 20px;
 }
 
 .options__label {
