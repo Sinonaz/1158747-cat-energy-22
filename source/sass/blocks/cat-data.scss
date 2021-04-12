@@ -1,7 +1,35 @@
+.cat-data {
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    min-width: 569px;
+  }
+}
+
 .cat-data__item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.cat-data__item:not(:last-child) {
   margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .cat-data__input {
-  max-width: 229px;
+  width: 100%;
+  margin-left: 16px;
 }

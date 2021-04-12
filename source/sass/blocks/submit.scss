@@ -1,10 +1,14 @@
 .submit {
-  width: $mobile-width;
+  min-width: $mobile-width;
+  max-width: $tablet-width;
+  width: 100%;
   padding: 0 20px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     min-width: $tablet-width;
+    max-width: $desktop-width;
+    width: 100%;
     padding: 0 30px;
   }
 
@@ -28,8 +32,15 @@
 }
 
 .submit__button {
-  margin-top: 35px;
   margin-bottom: 21px;
+  font-size: 16px;
+  line-height: 1.25;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 0;
+    min-height: 52px;
+  }
 
   @media (min-width: $desktop-width) {
     min-width: 568px;
@@ -39,4 +50,9 @@
 .submit__text {
   font-family: "Arial", sans-serif;
   color: $default-black-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1;
+  }
 }

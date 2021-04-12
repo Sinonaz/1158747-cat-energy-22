@@ -29,6 +29,7 @@
 .calculations__stats-list {
   display: flex;
   justify-content: space-between;
+  max-width: 300px;
 
   @media (min-width: $tablet-width) {
     min-width: 366px;

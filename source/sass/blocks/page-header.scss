@@ -34,6 +34,8 @@
 
   @media (min-width: $tablet-width) {
     min-width: 175px;
+    align-self: flex-start;
+    margin-right: 25px;
   }
 
   @media (min-width: $desktop-width) {
