@@ -96,7 +96,8 @@
       width: 200px;
       height: 200px;
       top: 5px;
-      left: 390px;
+      left: unset;
+      right: 30px;
     }
 
     @media (min-width: $desktop-width) {
@@ -121,7 +122,8 @@
       width: 140px;
       height: 192px;
       top: -5px;
-      left: 414px;
+      left: unset;
+      right: 61px;
       background-image: url("../../img/icon/cat-1-tab.svg");
     }
 
@@ -148,7 +150,8 @@
       width: 268px;
       height: 112px;
       top: 48px;
-      left: 354px;
+      left: unset;
+      right: -2px;
       background-image: url("../../img/icon/cat-2-tab.svg");
     }
 
@@ -164,7 +167,7 @@
 
 .programm__description {
   position: relative;
-  max-width: 227px;
+
   width: 100%;
   margin-bottom: 38px;
 
