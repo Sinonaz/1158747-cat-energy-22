@@ -1,3 +1,16 @@
 .fieldset-legend {
   margin-bottom: 35px;
+  font-size: 24px;
+  line-height: 1.08;
+  color: $default-black-color;
+  background-color: $default-white-color;
+  padding-left: 20px;
+  transform: translateX(-10px);
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 1;
+    padding-left: 50px;
+    transform: translateX(-20px);
+  }
 }
