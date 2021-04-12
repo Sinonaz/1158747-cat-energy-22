@@ -3,6 +3,7 @@
   align-items: center;
   user-select: none;
 }
+
 .custom-checkbox + .addition-fieldset__label::before {
   content: "";
   display: inline-block;
