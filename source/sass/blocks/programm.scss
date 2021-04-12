@@ -36,8 +36,8 @@
   @media (min-width: $tablet-width) {
     min-width: 708px;
     min-height: 372px;
-    padding-top: 80px;
-    padding-left: 52px;
+    padding: 80px 50px;
+    padding-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
