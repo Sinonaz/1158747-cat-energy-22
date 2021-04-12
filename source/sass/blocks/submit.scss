@@ -33,6 +33,14 @@
 
 .submit__button {
   margin-bottom: 21px;
+  font-size: 16px;
+  line-height: 1.25;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 0;
+    min-height: 52px;
+  }
 
   @media (min-width: $desktop-width) {
     min-width: 568px;
@@ -42,4 +50,9 @@
 .submit__text {
   font-family: "Arial", sans-serif;
   color: $default-black-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1;
+  }
 }

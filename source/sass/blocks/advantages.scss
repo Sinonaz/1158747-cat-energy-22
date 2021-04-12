@@ -27,7 +27,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
 }
@@ -39,6 +39,7 @@
   @media (min-width: $tablet-width) {
     width: 230px;
     height: 280px;
+    margin-right: 104px;
 
     &::after {
       position: absolute;
@@ -51,6 +52,10 @@
       color: $default-gray-color;
       z-index: -1;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 73px;
   }
 
   &::before {
@@ -83,6 +88,10 @@
   &:last-child::before {
     background-image: url("../../img/icon/advantages-4.svg");
   }
+}
+
+.advantages__item:nth-of-type(4n) {
+  margin-right: 0;
 }
 
 .advantages__item:not(:last-child) {

@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     background-color: $default-white-color;
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: $default-gray-color;
+  }
 }
 
 .example__wrapper {
@@ -24,7 +28,6 @@
   @media (min-width: $desktop-width) {
     min-width: $desktop-width;
     padding: 0 110px;
-    background-color: $default-gray-color;
   }
 }
 
