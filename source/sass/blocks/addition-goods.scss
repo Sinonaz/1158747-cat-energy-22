@@ -1,10 +1,14 @@
 .addition-goods__wrapper {
-  width: $mobile-width;
+  min-width: $mobile-width;
+  max-width: $tablet-width;
+  width: 100%;
   padding: 0 20px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     min-width: $tablet-width;
+    max-width: $desktop-width;
+    width: 100%;
     padding: 0 30px;
     display: flex;
     flex-direction: column;
@@ -14,6 +18,19 @@
     min-width: $desktop-width;
     padding: 0 110px;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-content: flex-start;
+  }
+}
+
+.addition-goods__title {
+  font-size: 24px;
+  line-height: 1;
+  color: $default-black-color;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 1;
   }
 }
