@@ -1,5 +1,9 @@
 .programm {
   margin-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .programm__wrapper {

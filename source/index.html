@@ -58,13 +58,13 @@
         </button>
         <ul class="main-nav__list list">
           <li class="main-nav__list-item main-nav__list-item--active">
-            <a>главная</a>
+            <a class="main-nav__list-link">главная</a>
           </li>
           <li class="main-nav__list-item">
-            <a href="catalog.html">каталог продукции</a>
+            <a class="main-nav__list-link" href="catalog.html">каталог продукции</a>
           </li>
           <li class="main-nav__list-item">
-            <a href="form.html">подбор программы</a>
+            <a class="main-nav__list-link" href="form.html">подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -75,6 +75,11 @@
       <div class="service__wrapper">
         <h1 class="service__title title heading">Функциональное питание&nbsp;для&nbsp;котов</h1>
         <p class="service__text">Занялся собой? Займись котом!</p>
+        <picture class="service__picture">
+          <source media="(min-width: 1440px)" srcset="img/product-1-desktop.png 1x, img/product-1-desktop.png 2x">
+          <img class="service__img" src="img/product-1-desktop.png" srcset="img/product-1-desktop.png 2x" width="280"
+            height="270" alt="Продукт">
+        </picture>
         <a href="#" class="service__button button">подобрать программу</a>
       </div>
     </section>

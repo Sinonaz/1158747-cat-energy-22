@@ -1,14 +1,26 @@
 .service {
-  background-color: $default-green-color;
   padding-top: 27px;
+  background-image: url("../../img/index-bg-mob.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% 305px;
 
   @media (min-width: $tablet-width) {
     background-color: $default-white-color;
     padding-top: 62px;
+    padding-bottom: 538px;
+    background-image: url("../../img/product-1-tab.png");
+    background-size: 709px 609px;
+    background-position: 30px 251px;
+
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 111px;
+    padding-top: 255px;
+    background-image: url("../../img/index-bg-desktop.jpg");
+    background-position: 100% 0;
+    background-size: 720px 694px;
+    padding-bottom: 82px;
   }
 }
 
@@ -27,14 +39,16 @@
     min-width: $tablet-width;
     max-width: $desktop-width;
     width: 100%;
-    padding: 0 30px;
+    padding: 0 30px 0 90px;
     align-items: flex-start;
     text-align: start;
   }
 
   @media (min-width: $desktop-width) {
     min-width: $desktop-width;
-    padding: 0 110px;
+    padding: 0 190px;
+    flex-wrap: wrap;
+    max-height: 439px;
   }
 }
 
@@ -49,9 +63,7 @@
     font-size: 60px;
     line-height: 1;
     color: $default-black-color;
-  }
-
-  @media (min-width: $desktop-width) {
+    padding-bottom: 41px;
     max-width: 414px;
   }
 }
@@ -60,21 +72,45 @@
   line-height: 1;
   text-transform: uppercase;
   color: $default-white-color;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     color: $default-black-color;
+    margin-bottom: 49px;
+  }
+}
+
+.service__picture {
+  @media (min-width: $desktop-width) {
+    order: 3;
+  }
+}
+
+.service__img {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+    display: inline-block;
+    transform: translate(-75px, -77px);
   }
 }
 
 .service__button {
-  margin-top: 50px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1;
     max-width: 244px;
     padding: 15px 26px;
+    min-height: 54px;
   }
 
   &:hover {

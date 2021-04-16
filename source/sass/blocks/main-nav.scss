@@ -2,6 +2,8 @@
   position: relative;
   width: auto;
   margin-left: auto;
+  transition: $default-transition-settings;
+
 }
 
 .main-nav__list {
@@ -10,6 +12,7 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     min-width: 440px;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -107,7 +110,7 @@
     line-height: 1.33;
     font-weight: 400;
     border: none;
-    padding-top: 0;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -128,5 +131,12 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    padding: 0;
+  }
+}
+
+.main-nav__list-link {
+  @media (min-width: $desktop-width) {
+    color: $default-white-color;
   }
 }
