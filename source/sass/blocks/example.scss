@@ -4,7 +4,7 @@
 
   @media (min-width: $tablet-width) {
     background-color: $default-white-color;
-    background-image: linear-gradient(to bottom,transparent 0,transparent 484px,#f2f2f2 77px,#f2f2f2 100%);
+    background-image: linear-gradient(to bottom, transparent 0, transparent 484px, #f2f2f2 77px, #f2f2f2 100%);
   }
 
   @media (min-width: $desktop-width) {
@@ -85,7 +85,6 @@
 }
 
 .example__results-bar {
-  display: block;
   width: 84px;
   height: 14px;
   border-radius: 6px;
@@ -97,7 +96,6 @@
     position: relative;
     min-width: 428px;
     background-color: transparent;
-
   }
 }
 
@@ -119,7 +117,7 @@
 
 .example__results-range[type="range"]::-webkit-slider-thumb {
   @media (min-width: $tablet-width) {
-    -webkit-appearance: none;
+    appearance: none;
     position: relative;
     width: 35px;
     height: 35px;
@@ -129,7 +127,6 @@
     background-repeat: no-repeat;
     background-position: 50%;
     z-index: 9;
-    position: relative;
     transition: 0.5s all ease;
   }
 }
