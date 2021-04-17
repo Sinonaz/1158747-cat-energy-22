@@ -75,9 +75,13 @@
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
+  align-items: center;
 }
 
 .example__results-was {
+  font-family: "Oswald", "Arial", sans-serif;
+  border: none;
+  outline: none;
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;
@@ -85,6 +89,7 @@
 }
 
 .example__results-bar {
+  position: relative;
   width: 84px;
   height: 14px;
   border-radius: 6px;
@@ -93,45 +98,18 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    position: relative;
     min-width: 428px;
-    background-color: transparent;
-  }
-}
-
-.example__results-range {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    width: 100%;
-    height: 6px;
     background-color: $border-color;
-    appearance: none;
-    border-radius: 6px;
-    cursor: pointer;
+    height: 6px;
     margin-left: 14px;
     margin-right: 14px;
   }
 }
 
-.example__results-range[type="range"]::-webkit-slider-thumb {
-  @media (min-width: $tablet-width) {
-    appearance: none;
-    position: relative;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: $default-white-color;
-    background-image: url("../../img/icon/slider.svg");
-    background-repeat: no-repeat;
-    background-position: 50%;
-    z-index: 9;
-    transition: 0.5s all ease;
-  }
-}
-
 .example__results-toggle {
+  position: relative;
+  border: none;
+  outline: none;
   display: block;
   width: 35px;
   height: 6px;
@@ -141,11 +119,28 @@
   background-color: $default-green-color;
 
   @media (min-width: $tablet-width) {
-    display: none;
+    height: 35px;
+    background-color: $default-white-color;
+    border-radius: 50%;
+    left: 45%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      top: 40%;
+      left: 40%;
+      background-color: $default-green-color;
+      border-radius: 50%;
+    }
   }
 }
 
 .example__results-became {
+  font-family: "Oswald", "Arial", sans-serif;
+  border: none;
+  outline: none;
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;

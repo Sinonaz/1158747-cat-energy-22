@@ -45,7 +45,8 @@
         <h1 class="service__title title heading">Функциональное питание&nbsp;для&nbsp;котов</h1>
         <p class="service__text">Занялся собой? Займись котом!</p>
         <picture class="service__picture">
-          <source media="(min-width: 1440px)" srcset="img/product-1-desktop.png 1x, img/product-1-desktop.png 2x">
+          <source media="(min-width: 1440px)" srcset="img/product-1-desktop.png 1x, img/product-1-desktop-2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/product-1-tab.png 1x, img/product-1-tab@2x.png 2x">
           <img class="service__img" src="img/product-1-desktop.png" srcset="img/product-1-desktop.png 2x" width="280"
             height="270" alt="Продукт">
         </picture>
@@ -133,12 +134,11 @@
                 height="232" alt="Кот до">
             </picture>
             <div class="example__slider">
-              <span class="example__results-was">Было</span>
+              <button class="example__results-was">Было</button>
               <div class="example__results-bar">
-                <input class="example__results-range" type="range" min="1" max="100" value="50">
-                <div class="example__results-toggle"></div>
+                <button class="example__results-toggle"></button>
               </div>
-              <span class="example__results-became">Стало</span>
+              <button class="example__results-became">Стало</button>
             </div>
           </div>
         </div>

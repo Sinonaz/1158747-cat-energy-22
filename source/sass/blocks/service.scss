@@ -1,36 +1,52 @@
 .service {
   padding-top: 27px;
-  background-image: url("../../img/index-bg-mob.jpg");
+  background-image: url("../../img/index-background-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100% 305px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/index-bg-mob@2x.jpg");
+    background-image: url("../../img/index-background-mobile@2x.jpg");
   }
 
-  @media (min-width: $tablet-width) {
-    background-color: $default-white-color;
-    padding-top: 62px;
-    padding-bottom: 538px;
-    background-image: url("../../img/product-1-tab.png");
-    background-size: 709px 609px;
-    background-position: 30px 251px;
+  &::before {
+      content: "";
+      position: absolute;
+      top: 80px;
+      right: 0;
+      width: 100%;
+      height: 305px;
+      background-color: rgba(104, 183, 56, 0.85);;
+      z-index: 0;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/product-1-tab@2x.png");
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+
+      @media (min-width: $desktop-width) {
+        display: block;
+        width: 720px;
+        height: 694px;
+        top: 0;
+      }
     }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    background-image: none;
+    margin-bottom: 526px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 255px;
-    background-image: url("../../img/index-bg-desktop.jpg");
+    background-image: url("../../img/index-background-desktop.jpg");
     background-position: 100% 0;
     background-size: 720px 694px;
-    padding-bottom: 82px;
+    padding-bottom: 155px;
+    margin-bottom: 82px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/index-bg-desktop@2x.jpg");
+      background-image: url("../../img/index-background-desktop@2x.jpg");
     }
   }
 }
@@ -69,6 +85,7 @@
   font-weight: 300;
   color: $default-white-color;
   padding: 0 0 25px 0;
+  z-index: 3;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -83,7 +100,8 @@
   line-height: 1;
   text-transform: uppercase;
   color: $default-white-color;
-  margin-bottom: 29px;
+  margin-bottom: 302px;
+  z-index: 4;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -100,16 +118,24 @@
 
 .service__img {
   display: block;
+  position: absolute;
+  top: 37%;
+  left: 5%;
 
   @media (min-width: $tablet-width) {
-    display: none;
+    top: 71%;
+    left: 0%;
+    width: 709px;
+    height: 609px;
+    z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
     width: 552px;
     height: 499px;
-    display: inline-block;
-    transform: translate(-75px, -77px);
+    left: 39%;
+    top: 20%;
+    z-index: 8;
   }
 }
 
