@@ -10,7 +10,22 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 1;
-    padding-left: 50px;
     transform: translateX(-20px);
+    position: relative;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      display: block;
+      right: 100%;
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 100vw;
+      height: 3px;
+      margin-top: calc(1em / 2 + 3px);
+      background-color: $default-green-color;
+      z-index: -1;
+    }
   }
 }
