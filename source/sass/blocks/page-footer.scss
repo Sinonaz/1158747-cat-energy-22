@@ -55,6 +55,12 @@
   }
 }
 
+.page-footer__socia-link {
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .page-footer__copyright {
   padding: 22px 0 22px 0;
   border-top: 1px solid $line-color;

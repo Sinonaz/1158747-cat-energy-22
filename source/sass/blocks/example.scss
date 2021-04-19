@@ -4,6 +4,7 @@
 
   @media (min-width: $tablet-width) {
     background-color: $default-white-color;
+    background-image: linear-gradient(to bottom, transparent 0, transparent 484px, #f2f2f2 77px, #f2f2f2 100%);
   }
 
   @media (min-width: $desktop-width) {
@@ -74,16 +75,72 @@
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
+  align-items: center;
 }
 
 .example__results-was {
+  font-family: "Oswald", "Arial", sans-serif;
+  border: none;
+  outline: none;
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;
   color: $default-black-color;
 }
 
+.example__results-bar {
+  position: relative;
+  width: 84px;
+  height: 14px;
+  border-radius: 6px;
+  background-color: $default-white-color;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    min-width: 428px;
+    background-color: $border-color;
+    height: 6px;
+    margin-left: 14px;
+    margin-right: 14px;
+  }
+}
+
+.example__results-toggle {
+  position: relative;
+  border: none;
+  outline: none;
+  display: block;
+  width: 35px;
+  height: 6px;
+  border-radius: 6px;
+  margin-left: 6px;
+  margin-right: 6px;
+  background-color: $default-green-color;
+
+  @media (min-width: $tablet-width) {
+    height: 35px;
+    background-color: $default-white-color;
+    border-radius: 50%;
+    left: 45%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      top: 40%;
+      left: 40%;
+      background-color: $default-green-color;
+      border-radius: 50%;
+    }
+  }
+}
+
 .example__results-became {
+  font-family: "Oswald", "Arial", sans-serif;
+  border: none;
+  outline: none;
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;

@@ -1,5 +1,9 @@
 .programm {
   margin-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .programm__wrapper {
@@ -205,22 +209,36 @@
   line-height: 1;
   margin-top: auto;
   padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  max-width: 132px;
+  transition: $default-transition-settings;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1.5;
+    max-width: 165px;
   }
 
   &::after {
     position: absolute;
     content: "";
-    width: 24px;
+    left: 100px;
+    width: 32px;
     height: 12px;
     background-repeat: no-repeat;
     background-image: url("../../img/icon/arrow.svg");
+
+    @media (min-width: $tablet-width) {
+      left: 120px;
+    }
   }
 
   &:active {
     opacity: 0.3;
+  }
+
+  &:hover::after {
+    background-image: url("../../img/icon/arrow-big.svg");
   }
 }
