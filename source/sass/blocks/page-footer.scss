@@ -55,9 +55,15 @@
   }
 }
 
-.page-footer__socia-link {
+.page-footer__social-link {
   &:active {
     opacity: 0.3;
+  }
+}
+
+.page-footer__social-link path {
+  &:hover {
+    fill: $default-green-color;
   }
 }
 
