@@ -77,6 +77,25 @@
   position: absolute;
   left: 25%;
   top: 25%;
+
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    height: 172px;
+    top: 15%;
+    left: 20%;
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 10%;
+  }
+}
+
+.goods__img-big {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 200px;
+    top: 4%;
+  }
 }
 
 .goods__item-info {

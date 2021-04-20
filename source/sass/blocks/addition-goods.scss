@@ -24,13 +24,20 @@
 }
 
 .addition-goods__title {
+  position: relative;
   font-size: 24px;
   line-height: 1;
   color: $default-black-color;
   font-weight: 400;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 1;
+    padding-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
   }
 }
