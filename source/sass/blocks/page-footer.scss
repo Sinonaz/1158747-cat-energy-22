@@ -41,6 +41,14 @@
     border: none;
     padding-bottom: 0;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__social {
@@ -49,6 +57,7 @@
   margin: 0 auto;
   padding: 20px 0 20px 0;
   max-width: 130px;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     min-width: 130px;
@@ -61,9 +70,34 @@
   }
 }
 
-.page-footer__social-link path {
+.page-footer__social-icon {
   &:hover {
     fill: $default-green-color;
+  }
+}
+
+.vkontakte-icon {
+  @media (min-width: $tablet-width) {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.instagram-icon {
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.facebook-icon {
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 33px;
+  }
+
+  &:hover {
+    stroke: $default-green-color;
   }
 }
 
