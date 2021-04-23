@@ -45,9 +45,14 @@
         <h1 class="service__title title heading">Функциональное питание&nbsp;для&nbsp;котов</h1>
         <p class="service__text">Занялся собой? Займись котом!</p>
         <picture class="service__picture">
+          <source type="image/webp" media="(min-width: 1440px)"
+            srcset="img/product-1-desktop.webp 1x, img/product-1-desktop-2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/product-1-tab.webp 1x, img/product-1-tab@2x.webp 2x">
+          <source type="image/webp" srcset="img/product-1-mob.webp 1x, img/product-1-mob-2x.webp 2x">
           <source media="(min-width: 1440px)" srcset="img/product-1-desktop.png 1x, img/product-1-desktop-2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/product-1-tab.png 1x, img/product-1-tab@2x.png 2x">
-          <img class="service__img" src="img/product-1-desktop.png" srcset="img/product-1-desktop.png 2x" width="280"
+          <img class="service__img" src="img/product-1-mob.png" srcset="img/product-1-mob-2x 2x" width="280"
             height="270" alt="Продукт">
         </picture>
         <a href="#" class="service__button button">подобрать программу</a>
@@ -129,6 +134,9 @@
           </div>
           <div class="example__results">
             <picture>
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/cat-before-tablet.webp 1x, img/cat-before-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/cat-before.webp 1x, img/cat-before@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x">
               <img class="example__img" src="img/cat-before.png" srcset="img/cat-before@2x.png 2x" width="311"
                 height="232" alt="Кот до">
