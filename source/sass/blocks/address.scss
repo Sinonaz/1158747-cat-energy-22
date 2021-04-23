@@ -22,6 +22,17 @@
   display: flex;
   justify-content: space-between;
   padding: 28px 0 28px 0;
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-around;
+    min-width: 570px;
+    min-height: 201px;
+    position: absolute;
+    z-index: 1;
+    margin-top: 95px;
+    background-color: white;
+    padding: 66px 0 52px 0;
+  }
 }
 
 .adress__block-text {

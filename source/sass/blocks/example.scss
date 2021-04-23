@@ -44,6 +44,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 25px;
   }
 }
 
@@ -86,6 +87,7 @@
   line-height: 1.25;
   text-transform: uppercase;
   color: $default-black-color;
+  cursor: pointer;
 }
 
 .example__results-bar {
@@ -117,6 +119,7 @@
   margin-left: 6px;
   margin-right: 6px;
   background-color: $default-green-color;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     height: 35px;
@@ -145,4 +148,5 @@
   line-height: 1.25;
   text-transform: uppercase;
   color: $default-black-color;
+  cursor: pointer;
 }
