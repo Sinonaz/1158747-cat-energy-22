@@ -1,4 +1,10 @@
-.adress__wrapper {
+.address {
+  @media (min-width: $desktop-width) {
+    padding-top: 82px;
+  }
+}
+
+.address__wrapper {
   min-width: $mobile-width;
   max-width: $tablet-width;
   width: 100%;
@@ -18,7 +24,7 @@
   }
 }
 
-.adress__block {
+.address__block {
   display: flex;
   justify-content: space-between;
   padding: 28px 0 28px 0;
@@ -35,7 +41,7 @@
   }
 }
 
-.adress__block-text {
+.address__block-text {
   font-size: 16px;
   line-height: 1.12;
   text-transform: uppercase;

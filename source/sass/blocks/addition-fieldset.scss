@@ -18,6 +18,10 @@
   }
 }
 
+.addition-fieldset__title {
+  max-width: 165px;
+}
+
 .addition-fieldset__list {
   @media (min-width: $tablet-width) {
     display: flex;

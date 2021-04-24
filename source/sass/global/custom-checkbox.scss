@@ -2,6 +2,7 @@
   display: inline-flex;
   align-items: center;
   user-select: none;
+  cursor: pointer;
 }
 
 .custom-checkbox + .addition-fieldset__label::before {
@@ -23,12 +24,16 @@
   }
 }
 
-.custom-checkbox:checked + label::before {
-  background-image: url("../../img/icon/check.svg");
+.custom-checkbox:hover + .addition-fieldset__label::before {
+  border-color: $options-blocked;
 }
 
-.custom-checkbox:disabled + .addition-fieldset__label::before {
+.custom-checkbox:focus + .addition-fieldset__label::before {
   border-color: $options-blocked;
+}
+
+.custom-checkbox:checked + label::before {
+  background-image: url("../../img/icon/check.svg");
 }
 
 .custom-checkbox:disabled + .addition-fieldset__label {

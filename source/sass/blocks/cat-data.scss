@@ -32,4 +32,17 @@
 .cat-data__input {
   width: 100%;
   margin-left: 16px;
+  border: 1px solid $nav-line-color;
+
+  &:hover {
+    border-color: $border-color;
+  }
+
+  &:focus {
+    border: 2px solid $default-text-color;
+  }
+
+  &:invalid {
+    border: 2px solid $default-pink-color;
+  }
 }

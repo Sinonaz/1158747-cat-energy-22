@@ -41,8 +41,5 @@
   top: 0;
   left: 0;
   width: 100%;
-
-  @media (min-width: $tablet-width) {
-    height: 400px;
-  }
+  height: 100%;
 }
