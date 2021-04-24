@@ -2,6 +2,7 @@
   display: inline-flex;
   align-items: center;
   user-select: none;
+  cursor: pointer;
 }
 
 .custom-checkbox + .addition-fieldset__label::before {

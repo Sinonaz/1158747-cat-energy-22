@@ -36,6 +36,7 @@
   font-size: 16px;
   line-height: 1.25;
   width: 100%;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -46,6 +47,14 @@
 
   @media (min-width: $desktop-width) {
     min-width: 568px;
+  }
+
+  &:hover {
+    background-color: $green-hover-color;
+  }
+
+  &:active {
+    color: $text-active-color;
   }
 }
 
