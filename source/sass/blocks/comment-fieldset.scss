@@ -24,4 +24,14 @@
 
 .comment-fieldset__textarea {
   width: 100%;
+  border: none;
+  border: 1px solid $nav-line-color;
+
+  &:hover {
+    border-color: $border-color;
+  }
+
+  &:focus {
+    border: 2px solid $default-text-color;
+  }
 }

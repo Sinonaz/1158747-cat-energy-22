@@ -37,6 +37,7 @@
   margin-bottom: 15px;
   display: flex;
   align-items: center;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
@@ -50,8 +51,51 @@
 .contacts-fieldset__input {
   width: 100%;
   margin-left: 12px;
+  border: none;
+  border: 1px solid $nav-line-color;
+
+  &:hover {
+    border-color: $border-color;
+  }
+
+  &:focus {
+    border: 2px solid $default-text-color;
+  }
+
+  &:invalid {
+    border: 2px solid $default-pink-color;
+  }
 
   @media (min-width: $tablet-width) {
     margin-left: 18px;
+  }
+}
+
+.contacts-fieldset__input:focus + .contacts-fieldset__item-icon {
+  fill: $default-green-color;
+}
+
+.contacts-fieldset__input:invalid + .contacts-fieldset__item-icon {
+  fill: $default-pink-color;
+}
+
+.icon-mail {
+  stroke: $special-dark-gray;
+}
+
+.contacts-fieldset__input:focus + .icon-mail {
+  stroke: $default-green-color;
+}
+
+.contacts-fieldset__input:invalid + .icon-mail {
+  stroke: $default-pink-color;
+}
+
+.contacts-fieldset__item-icon {
+  position: absolute;
+  right: 15px;
+
+  @media (min-width: $tablet-width) {
+    right: 20px;
   }
 }

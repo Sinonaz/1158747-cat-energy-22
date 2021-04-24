@@ -25,17 +25,9 @@
   }
 }
 
-// .custom-radio:focus + .options__label::before {
-//   border-color: ;
-// }
-
-// .custom-radio:focus + .options__label::after {
-//   background-color: ;
-// }
-
-// .custom-radio:not(:disabled) + .options__label:hover::before {
-//   border-color: ;
-// }
+.custom-radio:hover + .options__label::before {
+  border-color: $options-blocked;
+}
 
 .custom-radio + .options__label::after {
   position: absolute;
