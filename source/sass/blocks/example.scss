@@ -80,14 +80,8 @@
 }
 
 .example__results-was {
-  font-family: "Oswald", "Arial", sans-serif;
   border: none;
   outline: none;
-  font-size: 16px;
-  line-height: 1.25;
-  text-transform: uppercase;
-  color: $default-black-color;
-  cursor: pointer;
 }
 
 .example__results-bar {
@@ -126,6 +120,7 @@
     background-color: $default-white-color;
     border-radius: 50%;
     left: 45%;
+    border: 1px solid $border-color;
 
     &::before {
       content: "";
@@ -141,12 +136,26 @@
 }
 
 .example__results-became {
-  font-family: "Oswald", "Arial", sans-serif;
   border: none;
   outline: none;
+}
+
+.example__buttons {
+  font-family: "Oswald", "Arial", sans-serif;
+  border-bottom: 1px dotted $text-button-color;
+  padding: 0;
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;
   color: $default-black-color;
   cursor: pointer;
+
+  &:hover {
+    border-bottom: 1px solid $border-hover;
+  }
+
+  &:active,
+  &:focus {
+    border: none;
+  }
 }

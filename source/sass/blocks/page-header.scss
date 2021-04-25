@@ -45,6 +45,7 @@
   justify-content: space-between;
   align-items: center;
   max-width: 190px;
+  transition: $default-transition-settings;
 
   @media (min-width: $tablet-width) {
     min-width: 175px;
