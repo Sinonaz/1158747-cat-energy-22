@@ -177,6 +177,7 @@
   margin-top: 22px;
   width: 100%;
   min-height: 40px;
+  transition: $default-transition-settings;
 
   @media (min-width: $tablet-width) {
     padding-top: 10px;
@@ -184,5 +185,13 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
+  }
+
+  &:hover {
+    background-color: $green-hover-color;
+  }
+
+  &:active {
+    color: $text-active-color;
   }
 }

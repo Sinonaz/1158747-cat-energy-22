@@ -19,6 +19,13 @@
   }
 }
 
+.show-more__plus-icon {
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+  }
+}
+
 .show-more__title {
   color: $super-special-dark-gray;
   margin-top: 20px;
@@ -52,8 +59,18 @@
   color: $default-text-color;
   width: 100%;
   min-height: 40px;
+  transition: $default-transition-settings;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
+  }
+
+  &:hover {
+    background-color: $goods-border-color;
+  }
+
+  &:active {
+    color: $text-button-color;
   }
 }
