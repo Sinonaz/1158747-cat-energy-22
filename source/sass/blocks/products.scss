@@ -76,6 +76,7 @@
 .products__item-button {
   margin-top: 15px;
   width: 100%;
+  transition: $default-transition-settings;
 
   @media (min-width: $tablet-width) {
     line-height: 0;
@@ -84,5 +85,13 @@
   @media (min-width: $desktop-width) {
     max-width: 245px;
     margin-top: 0;
+  }
+
+  &:hover {
+    background-color: $green-hover-color;
+  }
+
+  &:active {
+    color: $text-active-color;
   }
 }

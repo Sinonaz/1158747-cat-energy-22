@@ -1,5 +1,13 @@
 .catalog {
-  padding-top: 181px;
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 181px;
+  }
 }
 
 .catalog__title {
