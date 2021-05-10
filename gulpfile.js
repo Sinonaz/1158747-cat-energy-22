@@ -9,6 +9,7 @@ const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
 const terser = require("gulp-terser");
 const imagemin = require("gulp-imagemin");
+const webp = require("gulp-webp");
 const sync = require("browser-sync").create();
 
 // Styles
@@ -64,7 +65,7 @@ const optimizeImages = () => {
     .pipe(gulp.dest("build/img"))
 }
 
-exports.images = optimizeImages;
+exports.optimizeImages = optimizeImages;
 
 const copyImages = () => {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
@@ -72,6 +73,16 @@ const copyImages = () => {
 }
 
 exports.images = copyImages;
+
+// Webp
+
+const createWebp = () => {
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp({ quality: 90 }))
+    .pipe(gulp.dest("build/img"))
+}
+
+exports.createWebp = createWebp;
 
 // Server
 
