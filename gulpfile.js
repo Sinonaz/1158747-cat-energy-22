@@ -11,6 +11,7 @@ const terser = require("gulp-terser");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const sync = require("browser-sync").create();
+const del = require("del");
 
 // Styles
 
@@ -84,12 +85,33 @@ const createWebp = () => {
 
 exports.createWebp = createWebp;
 
+// Copy
+
+const copy = (done) => {
+  gulp.src([
+    "source/fonts/*.{woff2,woff}",
+    "source/*.ico",
+  ], {
+    base: "source"
+  })
+    .pipe(gulp.dest("build"))
+  done();
+}
+
+exports.copy = copy;
+
+// Clean
+
+const clean = () => {
+  return del("build");
+};
+
 // Server
 
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -100,12 +122,37 @@ const server = (done) => {
 
 exports.server = server;
 
+// Reload
+
+const reload = (done) => {
+  sync.reload();
+  done();
+}
+
+exports.reload = reload;
+
 // Watcher
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/*.html").on("change", sync.reload);
 }
+
+// Build
+
+const build = gulp.series(
+  clean,
+  copy,
+  optimizeImages,
+  gulp.parallel(
+    styles,
+    html,
+    scripts,
+    createWebp
+  ),
+);
+
+exports.build = build;
 
 exports.default = gulp.series(
   styles, server, watcher
