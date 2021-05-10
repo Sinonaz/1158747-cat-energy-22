@@ -154,6 +154,19 @@ const build = gulp.series(
 
 exports.build = build;
 
+// Defaults
+
 exports.default = gulp.series(
-  styles, server, watcher
-);
+  clean,
+  copy,
+  copyImages,
+  gulp.parallel(
+    styles,
+    html,
+    scripts,
+    createWebp
+  ),
+  gulp.series(
+    server,
+    watcher
+  ));
