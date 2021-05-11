@@ -66,3 +66,15 @@
     opacity: 0.6;
   }
 }
+
+.logo-img {
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 60px;
+  }
+}
