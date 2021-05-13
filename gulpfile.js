@@ -12,6 +12,7 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const sync = require("browser-sync").create();
 const del = require("del");
+const fileInclude = require("gulp-file-include");
 
 // Styles
 
@@ -37,6 +38,13 @@ exports.styles = styles;
 const html = () => {
   return gulp.src("source/**/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(fileInclude({
+      prefix: "@@",
+      basepath: "@root",
+      context: {
+        test: "text"
+      }
+    }))
     .pipe(gulp.dest("build"));
 }
 
@@ -135,7 +143,7 @@ exports.reload = reload;
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
-  gulp.watch("source/*.html").on("change", gulp.series(html, reload));
+  gulp.watch("source/**/*.html").on("change", gulp.series(html, reload));
 }
 
 // Build

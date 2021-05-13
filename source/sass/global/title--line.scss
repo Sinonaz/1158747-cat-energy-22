@@ -1,0 +1,11 @@
+.title--line::after {
+  display: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 3px;
+  margin-top: calc(1em/2 + 3px);
+  background-color: #68b738;
+  z-index: -1;
+}
