@@ -36,7 +36,7 @@ exports.styles = styles;
 // Html
 
 const html = () => {
-  return gulp.src("source/**/*.html")
+  return gulp.src("source/html/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(fileInclude({
       prefix: "@@",
