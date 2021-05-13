@@ -25,23 +25,3 @@
   margin-top: 23px;
   border: none;
 }
-
-.title--line {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    height: 3px;
-    margin-top: calc(1em / 2 + 3px);
-    background-color: #68b738;
-    z-index: -1;
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
-}

@@ -4,7 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/icon/152.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/icon/152.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -53,27 +59,6 @@
           </clipPath>
         </defs>
       </symbol>
-      <symbol fill="none" viewBox="0 0 19 14" id="mail-icon">
-        <line x1="1.1793" y1="6" x2="1.1793" y2="14" stroke-width="1.3" />
-        <line x1="18.1793" y1="6" x2="18.1793" y2="14" stroke-width="1.3" />
-        <line x1="0.529297" y1="13.35" x2="18.5293" y2="13.35" stroke-width="1.3" />
-        <line x1="0.529297" y1="1.35" x2="18.5293" y2="1.35" stroke-width="1.3" />
-        <path d="M17.8793 3.1821L9.52932 9.67654L1.1793 3.18209V1.65H4.0293L9.52932 1.65H14.5293H17.8793V3.1821Z"
-          stroke-width="1.3" />
-      </symbol>
-      <symbol viewBox="0 0 20 20" id="phone-icon">
-        <g clip-path="url(#clip0)">
-          <path
-            d="M17.9 9.4H9.40002V10.6H17.9L15.8 12.7L16.7 13.6L19.8 10.5C19.8974 10.3702 19.95 10.2123 19.95 10.05C19.95 9.88772 19.8974 9.72982 19.8 9.6L16.7 6.5L15.8 7.4L17.9 9.4Z" />
-          <path
-            d="M8.09995 19.4V13.2C8.0884 13.0447 8.02148 12.8987 7.91136 12.7886C7.80125 12.6785 7.65525 12.6116 7.49995 12.6H3.09995C3.1051 12.9167 3.23318 13.2189 3.45712 13.4428C3.68106 13.6668 3.9833 13.7949 4.29995 13.8H6.79995V18.8H3.09995C2.86319 18.8149 2.62585 18.7825 2.4017 18.7048C2.17756 18.6271 1.97109 18.5057 1.7943 18.3475C1.61751 18.1893 1.47393 17.9976 1.37189 17.7834C1.26986 17.5693 1.21142 17.337 1.19995 17.1V3.10001C1.19175 2.6373 1.3651 2.18977 1.68286 1.85331C2.00062 1.51686 2.43752 1.31824 2.89995 1.30001H6.79995V6.30001H4.39995C4.0833 6.30516 3.78106 6.43324 3.55712 6.65718C3.33318 6.88112 3.2051 7.18336 3.19995 7.50001H7.59995C7.75525 7.48846 7.90125 7.42154 8.01136 7.31142C8.12148 7.2013 8.1884 7.05531 8.19995 6.90001V0.600012C8.15226 0.443872 8.06111 0.304534 7.93715 0.198285C7.81319 0.0920352 7.66155 0.0232649 7.49995 1.23734e-05H3.09995C2.70593 -0.0133408 2.31315 0.0511002 1.94405 0.189651C1.57495 0.328202 1.23678 0.538145 0.948872 0.807477C0.660965 1.07681 0.428969 1.40025 0.266146 1.7593C0.103324 2.11835 0.0128689 2.50598 -4.64045e-05 2.90001V16.8C-0.0290254 17.1977 0.0245894 17.597 0.157426 17.9729C0.290263 18.3489 0.499448 18.6932 0.771825 18.9844C1.0442 19.2756 1.37388 19.5072 1.74012 19.6648C2.10637 19.8224 2.50126 19.9024 2.89995 19.9H7.49995C7.57344 19.915 7.64937 19.9133 7.7221 19.895C7.79484 19.8767 7.86253 19.8423 7.92015 19.7942C7.97777 19.7462 8.02385 19.6859 8.05497 19.6176C8.0861 19.5494 8.10147 19.475 8.09995 19.4Z" />
-        </g>
-        <defs>
-          <clipPath id="clip0">
-            <rect width="20" height="20" fill="white" />
-          </clipPath>
-        </defs>
-      </symbol>
     </svg>
   </div>
   <header class="page-header">
@@ -85,131 +70,135 @@
           <img class="logo-img" src="img/logo/mobile-logo.svg" width="191" height="37" alt="Кэт Энерджи">
         </picture>
       </a>
-      <nav class="main-nav page-header__nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav header__main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button" aria-label="Кнопка переключения меню">
         </button>
         <ul class="main-nav__list list">
-          <li class="main-nav__list-item">
-            <a href="index.html">главная</a>
+          <li class="main-nav__list-item main-nav__list-item--active-index">
+            <a class="main-nav__list-link">главная</a>
           </li>
           <li class="main-nav__list-item">
-            <a href="catalog.html">каталог продукции</a>
+            <a class="main-nav__list-link" href="catalog.html">каталог продукции</a>
           </li>
-          <li class="main-nav__list-item main-nav__list-item--active">
-            <a>подбор программы</a>
+          <li class="main-nav__list-item">
+            <a class="main-nav__list-link" href="form.html">подбор программы</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
   <main class="page-main">
-    <div class="title-profile wrapper">
-      <h1 class="title-profile__title title">Подбор программы</h1>
-      <p class="title-profile__text">Заполните анкету, и мы подберем
-        программу&nbsp;питания для вашего кота</p>
-    </div>
-    <section class="profile">
-      <h2 class="visually-hidden">Анкета для подбора программы</h2>
-      <form class="profile__form field-box" action="https://echo.htmlacademy.ru" method="GET">
-        <div class="field-box__wrapper">
-          <ul class="field-box__cat-data cat-data list">
-            <li class="cat-data__item">
-              <label class="cat-data__label label" for="cat-name">ИМЯ:<sup>*</sup></label>
-              <input class="cat-data__input field-input" type="text" id="cat-name" name="cat-name" placeholder="барсик">
-            </li>
-            <li class="cat-data__item">
-              <label class="cat-data__label label" for="cat-weight">Вес&nbsp;(кг):<sup>*</sup></label>
-              <input class="cat-data__input field-input" type="text" id="cat-weight" name="cat-weight" placeholder="7">
-            </li>
-            <li class="cat-data__item">
-              <label class="cat-data__label label" for="cat-age">Возраст&nbsp;(лет):</label>
-              <input class="cat-data__input field-input" type="text" id="cat-age" name="cat-age" placeholder="7">
-            </li>
-          </ul>
-          <ul class="field-box__options options list">
-            <li class="options__item">
-              <input class="options__input custom-radio visually-hidden" type="radio" id="weight-loss" name="option"
-                value="weight-loss" checked>
-              <label class="options__label label" for="weight-loss">похудение</label>
-            </li>
-            <li class="options__item">
-              <input class="options__input custom-radio visually-hidden" type="radio" id="weight-gain" name="option"
-                value="weight-loss">
-              <label class="options__label label" for="weight-gain">Набор массы</label>
-            </li>
-            <li class="options__item">
-              <input class="options__input custom-radio visually-hidden" type="radio" id="need-help" name="option"
-                value="need-help">
-              <label class="options__label label" for="need-help">Не знаю (Нужен ваш совет)</label>
-            </li>
-          </ul>
+    <section class="service">
+      <div class="service__wrapper">
+        <h1 class="service__title title heading">Функциональное питание&nbsp;для&nbsp;котов</h1>
+        <p class="service__text">Занялся собой? Займись котом!</p>
+        <picture class="service__picture">
+          <source type="image/webp" media="(min-width: 1440px)"
+            srcset="img/product-1-desktop.webp 1x, img/product-1-desktop-2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/product-1-tab.webp 1x, img/product-1-tab@2x.webp 2x">
+          <source type="image/webp" srcset="img/product-1-mob.webp 1x, img/product-1-mob-2x.webp 2x">
+          <source media="(min-width: 1440px)" srcset="img/product-1-desktop.png 1x, img/product-1-desktop-2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/product-1-tab.png 1x, img/product-1-tab@2x.png 2x">
+          <img class="service__img" src="img/product-1-mob.png" srcset="img/product-1-mob-2x 2x" width="280"
+            height="270" alt="Продукт">
+        </picture>
+        <a href="#" class="service__button button">подобрать программу</a>
+      </div>
+    </section>
+    <section class="programm">
+      <h2 class="visually-hidden">Выбор программы</h2>
+      <div class="programm__wrapper">
+        <div class="programm__weight">
+          <h3 class="programm__title programm__title--slim heading">похудение</h3>
+          <p class="programm__description text">Ваш кот весит больше собаки и почти утратил способность лазить по
+            деревьям?
+            Пора на диету! Cat Energy Slim поможет
+            вашему питомцу сбросить лишний вес.</p>
+          <a class="programm__button" href="#">каталог slim</a>
         </div>
-        <fieldset class="field-box__fieldset contacts-fieldset">
-          <div class="contacts-fieldset__wrapper">
-            <legend class="contacts-fieldset__title title--line fieldset-legend">Контактные данные
-              (владельца кота)</legend>
-            <ul class="contacts-fieldset__list list">
-              <li class="contacts-fieldset__item">
-                <label class="contacts-fieldset__label label" for="email">E&#8209;mail:<sup>*</sup></label>
-                <input class="contacts-fieldset__input field-input" type="text" id="email" name="email"
-                  placeholder="kuklachev@gmail.com">
-                <svg class="contacts-fieldset__item-icon icon-mail" width="19" height="14">
-                  <use xlink:href="#mail-icon"></use>
-                </svg>
-              </li>
-              <li class="contacts-fieldset__item">
-                <label class="contacts-fieldset__label label" for="phone">Телефон:<sup>*</sup></label>
-                <input class="contacts-fieldset__input field-input" type="text" id="phone" name="phone"
-                  placeholder="8 (960) 900-60-90">
-                <svg class="contacts-fieldset__item-icon" width="20" height="20">
-                  <use xlink:href="#phone-icon"></use>
-                </svg>
-              </li>
-            </ul>
+        <div class="programm__weight">
+          <h3 class="programm__title programm__title--gain heading">набор массы</h3>
+          <p class="programm__description text">Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat
+            Energy
+            Pro
+            поможет вашему коту нарастить необходимые
+            мышцы!</p>
+          <a class="programm__button" href="#">каталог pro</a>
+        </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="advantages__wrapper">
+        <h2 class="advantages__title title heading">Как это работает</h2>
+        <ul class="advantages__list list">
+          <li class="advantages__item">
+            <p class="advantages__text text">Функциональное питание
+              содержит только полезные
+              питательные вещества.</p>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__text text">Выпускается в виде порошка,
+              который нужно лишь залить
+              кипятком и готово.</p>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__text text">Замените один-два приема
+              обычной еды на наше
+              функциональное питание.</p>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__text text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="example">
+      <div class="example__wrapper">
+        <h2 class="example__title title heading">Живой пример</h2>
+        <div class="example__container">
+          <div class="example__calculations calculations">
+            <p class="calculations__description text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
+              на
+              Cat Energy Slim.
+              Отличный результат без изнуряющих
+              тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <div class="calculations__stats">
+              <div class="calculations__stats-list">
+                <div class="calculations__stats-list-block">
+                  <p class="calculations__number">5 кг</p>
+                  <p class="calculations__text text--first">снижение веса</p>
+                </div>
+                <div class="calculations__stats-list-block">
+                  <p class="calculations__number">60 дней</p>
+                  <p class="calculations__text">затрачено времени</p>
+                </div>
+              </div>
+              <div class="calculations__food-costs">
+                <p class="calculations__food-costs-text">Затраты на питание: <span class="food-cost-number">15 000
+                    РУБ.</span></p>
+              </div>
+            </div>
           </div>
-        </fieldset>
-        <fieldset class="field-box__fieldset comment-fieldset">
-          <div class="comment-fieldset__wrapper">
-            <legend class="comment-fieldset__title title--line fieldset-legend">Комментарий</legend>
-            <label class="visually-hidden" for="comment">Текстовое поле для заполнения</label>
-            <textarea class="comment-fieldset__textarea field-input" name="comment" id="comment" cols="200" rows="10"
-              placeholder="Расскажите обо всех повадках кота"></textarea>
-          </div>
-        </fieldset>
-        <fieldset class="field-box__fieldset addition-fieldset">
-          <div class="addition-fieldset__wrapper">
-            <legend class="addition-fieldset__title title--line fieldset-legend">Дополнительно</legend>
-            <ul class="addition-fieldset__list list">
-              <li class="addition-fieldset__item">
-                <input class="addition-fieldset__input visually-hidden custom-checkbox" type="checkbox" id="sweetener"
-                  name="sweetener" checked>
-                <label class="addition-fieldset__label label" for="sweetener">сахарозаменитель</label>
-              </li>
-              <li class="addition-fieldset__item">
-                <input class="addition-fieldset__input visually-hidden custom-checkbox" type="checkbox" id="water"
-                  name="water">
-                <label class="addition-fieldset__label label" for="water">питьевая вода</label>
-              </li>
-              <li class="addition-fieldset__item">
-                <input class="addition-fieldset__input visually-hidden custom-checkbox" type="checkbox" id="milk"
-                  name="milk">
-                <label class="addition-fieldset__label label" for="milk">молоко</label>
-              </li>
-              <li class="addition-fieldset__item">
-                <input class="addition-fieldset__input visually-hidden custom-checkbox" type="checkbox" id="vitamins"
-                  name="vitamins">
-                <label class="addition-fieldset__label label" for="vitamins">витамины</label>
-              </li>
-            </ul>
-          </div>
-        </fieldset>
-        <div class="submit">
-          <div class="submit__wrapper">
-            <button class="submit__button button" type="submit">отправить заявку</button>
-            <p class="submit__text"><sup>*</sup> — Обязательные поля</p>
+          <div class="example__results">
+            <picture>
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/cat-before-tablet.webp 1x, img/cat-before-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/cat-before.webp 1x, img/cat-before@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x">
+              <img class="example__img" src="img/cat-before.png" srcset="img/cat-before@2x.png 2x" width="311"
+                height="232" alt="Кот до">
+            </picture>
+            <div class="example__slider">
+              <button class="example__results-was example__buttons">Было</button>
+              <div class="example__results-bar">
+                <button class="example__results-toggle"></button>
+              </div>
+              <button class="example__results-became example__buttons">Стало</button>
+            </div>
           </div>
         </div>
-      </form>
+      </div>
     </section>
     <section class="address">
       <h2 class="visually-hidden">Наш адрес</h2>
@@ -224,14 +213,15 @@
         </div>
       </div>
       <div class="address__map">
-        <source type="image/webp" media="(min-width: 1440px)"
-          srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tab.webp 1x, img/map-tab@2x.webp 2x">
-        <source type="image/webp" srcset="img/map-mob.webp 1x, img/map-mob@2x.webp 2x">
-        <source media="(min-width: 1440px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
-        <source media="(min-width: 768px)" srcset="img/map-tab.png 1x, img/map-tab@2x.png 2x">
-        <img class="address__map-img" src="img/map-mob.png" srcset="img/map-mob@2x.png 2x"
-          alt="ул. Большая Конюшенная, д. 19/8" width="320" height="362">
+        <picture>
+          <source type="image/webp" media="(min-width: 1440px)"
+            srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tab.webp 1x, img/map-tab@2x.webp 2x">
+          <source type="image/webp" srcset="img/map-mob.webp 1x, img/map-mob@2x.webp 2x">
+          <source media="(min-width: 1440px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tab.png 1x, img/map-tab@2x.png 2x">
+          <img class="address__map-img" src="img/map-mob.png" srcset="img/map-mob@2x.png 2x"
+            alt="ул. Большая Конюшенная, д. 19/8" width="320" height="362">
         </picture>
         <iframe class="map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6245172992017!2d30.322886466369788!3d59.93837252149542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1619176339682!5m2!1sru!2sru"
