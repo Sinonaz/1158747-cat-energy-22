@@ -1,7 +1,9 @@
 .legend {
+  display: block;
   z-index: 1;
   background-color: $default-white-color;
   padding-right: 23px;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     padding-right: 40px;

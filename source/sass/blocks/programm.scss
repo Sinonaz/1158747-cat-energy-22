@@ -34,7 +34,7 @@
   background-color: $default-gray-color;
   min-width: 280px;
   min-height: 266px;
-  padding: 45px 20px 25px 20px;
+  padding: 32px 21px 11px 20px;
 
   @media (min-width: $tablet-width) {
     min-width: 708px;
@@ -188,7 +188,7 @@
   &::after {
     position: absolute;
     content: "";
-    bottom: -17px;
+    bottom: -22px;
     left: 0;
     min-width: 240px;
     max-width: $tablet-width;
