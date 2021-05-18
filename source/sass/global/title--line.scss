@@ -1,10 +1,26 @@
+.title--line {
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 3px;
+    margin-top: calc(1em / 2 + 3px);
+    background-color: #68b738;
+    z-index: -1;
+  }
+}
+
 .title--line::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 3px;
-  margin-top: calc(1em / 2 + 3px);
-  background-color: #68b738;
-  z-index: -1;
+  left: 0;
+}
+
+.title--line::before {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    right: 100%;
+  }
 }
