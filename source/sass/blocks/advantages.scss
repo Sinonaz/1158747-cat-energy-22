@@ -67,7 +67,7 @@
     content: "";
     width: 60px;
     height: 60px;
-    top: 0;
+    top: 2px;
     left: 0;
     margin-right: 20px;
     background-color: $default-green-color;
@@ -100,10 +100,12 @@
 }
 
 .advantages__item:not(:last-child) {
-  margin-bottom: 25px;
+  margin-bottom: 21px;
 }
 
 .advantages__text {
+  margin-top: 4px;
+
   @media (min-width: $tablet-width) {
     margin-top: 71px;
     font-size: 16px;

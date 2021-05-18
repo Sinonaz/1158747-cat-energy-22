@@ -30,6 +30,7 @@
   display: flex;
   justify-content: space-between;
   max-width: 300px;
+  padding-top: 3px;
 
   @media (min-width: $tablet-width) {
     min-width: 366px;
@@ -102,7 +103,7 @@
 }
 
 .calculations__food-costs {
-  padding-top: 40px;
+  padding-top: 36px;
   text-align: center;
 
   @media (min-width: $tablet-width) {

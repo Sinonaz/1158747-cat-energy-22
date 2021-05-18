@@ -55,7 +55,7 @@
 }
 
 .example__results {
-  padding-bottom: 25px;
+  padding-bottom: 33px;
 
   @media (min-width: $desktop-width) {
     margin-right: 320px;
@@ -64,7 +64,7 @@
 
 .example__img {
   display: block;
-  margin: 42px auto 23px auto;
+  margin: 42px auto 31px auto;
 
   @media (min-width: $tablet-width) {
     margin-top: 60px;
@@ -143,12 +143,13 @@
 .example__buttons {
   font-family: "Oswald", "Arial", sans-serif;
   border-bottom: 1px dotted $text-button-color;
-  padding: 0;
+  padding-left: 9px;
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;
   color: $default-black-color;
   cursor: pointer;
+  background-color: $dark-gray-color;
 
   &:hover {
     border-bottom: 1px solid $border-hover;
