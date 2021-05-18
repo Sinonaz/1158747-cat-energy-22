@@ -39,8 +39,7 @@
   @media (min-width: $tablet-width) {
     min-width: 708px;
     min-height: 372px;
-    padding: 80px 50px;
-    padding-bottom: 30px;
+    padding: 77px 53px 47px 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -69,7 +68,7 @@
   color: $default-black-color;
   text-transform: uppercase;
   font-weight: 400;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
   padding-left: 70px;
   padding-right: 5px;
   padding-bottom: 5px;
@@ -98,9 +97,9 @@
     @media (min-width: $tablet-width) {
       width: 200px;
       height: 200px;
-      top: 5px;
+      top: 14px;
       left: unset;
-      right: 30px;
+      right: 8px;
     }
 
     @media (min-width: $desktop-width) {
@@ -124,9 +123,9 @@
     @media (min-width: $tablet-width) {
       width: 140px;
       height: 192px;
-      top: -5px;
+      top: 3px;
       left: unset;
-      right: 61px;
+      right: 39px;
       background-image: url("../../img/icon/cat-1-tab.svg");
     }
 
@@ -152,9 +151,9 @@
     @media (min-width: $tablet-width) {
       width: 268px;
       height: 112px;
-      top: 48px;
+      top: 58px;
       left: unset;
-      right: -2px;
+      right: -25px;
       background-image: url("../../img/icon/cat-2-tab.svg");
     }
 
@@ -229,7 +228,7 @@
     transition: $default-transition-settings;
 
     @media (min-width: $tablet-width) {
-      left: 120px;
+      left: 131px;
     }
   }
 

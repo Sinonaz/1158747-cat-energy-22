@@ -21,7 +21,11 @@
 .address__block {
   display: flex;
   justify-content: space-between;
-  padding: 28px 0 28px 0;
+  padding: 28px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 70px 0;
+  }
 
   @media (min-width: $desktop-width) {
     justify-content: space-around;
@@ -56,5 +60,19 @@
     font-size: 16px;
     line-height: 1.25;
     min-width: 160px;
+    transform: translateY(-6px);
+  }
+}
+
+.address-text-street {
+  @media (min-width: $tablet-width) {
+    padding-left: 66px;
+  }
+}
+
+.address-text-town {
+  @media (min-width: $tablet-width) {
+    display: block;
+    transform: translate(33px, 19px);
   }
 }

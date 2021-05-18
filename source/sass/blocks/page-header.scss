@@ -64,6 +64,7 @@
   @media (min-width: $tablet-width) {
     width: 174px;
     height: 51px;
+    transform: translate(1px, 3px);
   }
 
   @media (min-width: $desktop-width) {

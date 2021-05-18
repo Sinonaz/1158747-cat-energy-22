@@ -32,7 +32,7 @@
     min-width: $tablet-width;
     max-width: $desktop-width;
     width: 100%;
-    padding: 0 30px 0 90px;
+    padding: 30px 30px 0 117px;
     align-items: flex-start;
     text-align: start;
   }
@@ -126,8 +126,8 @@
   left: 6%;
 
   @media (min-width: $tablet-width) {
-    top: 71%;
-    left: 0%;
+    top: 76%;
+    left: 31px;
     width: 709px;
     height: 609px;
     z-index: -1;
@@ -152,6 +152,7 @@
     max-width: 244px;
     padding: 15px 26px;
     min-height: 54px;
+    transform: translateX(-4px);
   }
 
   &:hover {
