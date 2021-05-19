@@ -10,6 +10,7 @@
 
   @media (min-width: $desktop-width) {
     background-color: $default-gray-color;
+    margin-top: 6px;
   }
 }
 
@@ -39,19 +40,27 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 63px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-bottom: 74px;
+    background-color: $default-white-color;
+  }
 }
 
 .example__container {
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 25px;
+    padding-bottom: 47px;
+    position: relative;
   }
 }
 
 .example__calculations {
   @media (min-width: $desktop-width) {
     max-width: 436px;
+    padding-top: 71px;
   }
 }
 
@@ -63,7 +72,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 320px;
+    position: absolute;
+    top: -195px;
+    left: 549px;
   }
 }
 
@@ -77,6 +88,14 @@
     height: 545px;
     margin-bottom: 11px;
   }
+
+
+  @media (min-width: $tablet-width) {
+    width: 90%;
+    height: 523px;
+    margin-bottom: 33px;
+    margin-top: 0;
+  }
 }
 
 .example__slider {
@@ -85,6 +104,10 @@
   justify-content: space-around;
   margin: 0 auto;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 100px;
+  }
 }
 
 .example__results-was {
