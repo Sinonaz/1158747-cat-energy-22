@@ -1,5 +1,5 @@
 .cat-data {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 72px;
@@ -31,7 +31,7 @@
 
 .cat-data__input {
   width: 100%;
-  margin-left: 16px;
+  margin-left: 10px;
   border: 1px solid $nav-line-color;
 
   &:hover {

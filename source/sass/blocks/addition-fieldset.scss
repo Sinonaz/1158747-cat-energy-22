@@ -1,3 +1,8 @@
+.addition-fieldset {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
 .addition-fieldset__wrapper {
   min-width: $mobile-width;
   max-width: $tablet-width;
@@ -20,6 +25,7 @@
 
 .addition-fieldset__title {
   max-width: 165px;
+  margin-bottom: 33px;
 }
 
 .addition-fieldset__list {
@@ -36,7 +42,7 @@
 }
 
 .addition-fieldset__item {
-  margin-bottom: 15px;
+  margin-bottom: 9px;
 
   @media (min-width: $tablet-width) {
     min-width: 221px;

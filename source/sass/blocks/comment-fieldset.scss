@@ -18,9 +18,15 @@
   }
 }
 
+.comment-fieldset__title {
+  margin-bottom: 37px;
+}
+
 .comment-fieldset__textarea {
   width: 100%;
   border: 1px solid $nav-line-color;
+  padding-top: 9px;
+  padding-right: 5px;
 
   &:hover {
     border-color: $border-color;

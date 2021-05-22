@@ -1,7 +1,13 @@
 .title-profile {
+  padding-top: 3px;
+
   @media (min-width: $desktop-width) {
     padding-top: 141px;
   }
+}
+
+.title-profile__title {
+  padding-bottom: 11px;
 }
 
 .title-profile__text {
