@@ -153,3 +153,9 @@
     padding: 8px 0 7px;
   }
 }
+
+.main-nav__list-link--index {
+  @media (min-width: $desktop-width) {
+    color: $default-white-color;
+  }
+}
