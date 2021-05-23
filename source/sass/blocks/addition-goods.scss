@@ -1,5 +1,10 @@
 .addition-goods {
   padding-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+    margin-bottom: 37px;
+  }
 }
 
 .addition-goods__wrapper {
@@ -39,6 +44,7 @@
     font-size: 36px;
     line-height: 1;
     padding-left: 30px;
+    max-width: 441px;
   }
 
   @media (min-width: $desktop-width) {

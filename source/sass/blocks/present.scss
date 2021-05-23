@@ -17,7 +17,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 65px 110px 71px 91px;
+    padding: 65px 121px 56px 79px;
     margin-top: 69px;
     background-image: url("../../img/gift-photo-tablet-1.jpg");
 
@@ -39,6 +39,12 @@
   }
 }
 
+.present__img {
+  @media (min-width: $tablet-width) {
+    transform: translateY(-6px);
+  }
+}
+
 .present__text {
   color: $default-white-color;
   font-family: "Arial", sans-serif;
@@ -51,7 +57,7 @@
   @media (min-width: $tablet-width) {
     text-align: left;
     width: 175px;
-    margin: 7px 0 0;
+    margin: -4px 0 0;
   }
 
   @media (min-width: $desktop-width) {
