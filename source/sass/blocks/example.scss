@@ -9,8 +9,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $default-gray-color;
     margin-top: 6px;
+    background-image: linear-gradient(to bottom, transparent 0, transparent 161px, #f2f2f2 77px, #f2f2f2 100%);
   }
 }
 
@@ -35,17 +35,14 @@
 }
 
 .example__title {
-  padding: 27px 0 33px 20px;
+  padding: 27px 0 33px 0;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 63px;
-    padding-left: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
     padding-bottom: 74px;
-    background-color: $default-white-color;
   }
 }
 
@@ -82,6 +79,7 @@
 .example__img {
   display: block;
   margin: 42px auto 31px auto;
+  object-fit: cover;
 
   @media (min-width: $tablet-width) {
     margin-top: 60px;
@@ -153,14 +151,26 @@
     border-radius: 50%;
     left: 45%;
     border: 1px solid $border-color;
+    transition: $default-transition-settings;
+
+    &:hover {
+      box-shadow: 0 2px 5px 1px $border-color;
+    }
+
+    &:active,
+    &:focus {
+      border-color: $default-green-color;
+      box-shadow: 0 2px 6px 2px $border-color;
+    }
 
     &::before {
       content: "";
       position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       width: 8px;
       height: 8px;
-      top: 40%;
-      left: 40%;
       background-color: $default-green-color;
       border-radius: 50%;
     }

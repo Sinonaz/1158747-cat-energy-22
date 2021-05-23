@@ -33,6 +33,14 @@ const styles = () => {
 
 exports.styles = styles;
 
+const normalize = () => {
+  return gulp.src("source/css/normalize.css")
+    .pipe(gulp.dest("build/css"))
+    .pipe(sync.stream());
+}
+
+exports.normalize = normalize;
+
 // Html
 
 const html = () => {
@@ -154,6 +162,7 @@ const build = gulp.series(
   optimizeImages,
   gulp.parallel(
     styles,
+    normalize,
     html,
     scripts,
     createWebp
@@ -170,6 +179,7 @@ exports.default = gulp.series(
   copyImages,
   gulp.parallel(
     styles,
+    normalize,
     html,
     scripts,
     createWebp

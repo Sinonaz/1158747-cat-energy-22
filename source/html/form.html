@@ -4,7 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -115,11 +118,13 @@
           <ul class="field-box__cat-data cat-data list">
             <li class="cat-data__item">
               <label class="cat-data__label label" for="cat-name">ИМЯ:<sup>*</sup></label>
-              <input class="cat-data__input field-input" type="text" id="cat-name" name="cat-name" placeholder="барсик">
+              <input class="cat-data__input field-input" type="text" id="cat-name" name="cat-name" placeholder="барсик"
+                required>
             </li>
             <li class="cat-data__item">
               <label class="cat-data__label label" for="cat-weight">Вес&nbsp;(кг):<sup>*</sup></label>
-              <input class="cat-data__input field-input" type="text" id="cat-weight" name="cat-weight" placeholder="7">
+              <input class="cat-data__input field-input" type="text" id="cat-weight" name="cat-weight" placeholder="7"
+                required>
             </li>
             <li class="cat-data__item">
               <label class="cat-data__label label" for="cat-age">Возраст&nbsp;(лет):</label>
@@ -151,16 +156,16 @@
             <ul class="contacts-fieldset__list list">
               <li class="contacts-fieldset__item">
                 <label class="contacts-fieldset__label label" for="email">E&#8209;mail:<sup>*</sup></label>
-                <input class="contacts-fieldset__input field-input" type="text" id="email" name="email"
-                  placeholder="kuklachev@gmail.com">
+                <input class="contacts-fieldset__input field-input" type="email" id="email" name="email"
+                  placeholder="kuklachev@gmail.com" required>
                 <svg class="contacts-fieldset__item-icon icon-mail" width="19" height="14">
                   <use xlink:href="#mail-icon"></use>
                 </svg>
               </li>
               <li class="contacts-fieldset__item">
                 <label class="contacts-fieldset__label label" for="phone">Телефон:<sup>*</sup></label>
-                <input class="contacts-fieldset__input field-input" type="text" id="phone" name="phone"
-                  placeholder="8 (960) 900-60-90">
+                <input class="contacts-fieldset__input field-input" type="tel" id="phone" name="phone"
+                  placeholder="8 (960) 900-60-90" required>
                 <svg class="contacts-fieldset__item-icon" width="20" height="20">
                   <use xlink:href="#phone-icon"></use>
                 </svg>
@@ -266,7 +271,7 @@
           </a>
         </li>
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="#" aria-label="Фейсбук">
+          <a class="page-footer__social-link" href="#" aria-label="Фейсбук" aria-label="Логотип Кэт энерджи">
             <svg class="facebook-icon" width="22" height="22" stroke="#666666" fill="none">
               <use xlink:href="#fb-icon"></use>
             </svg>
@@ -274,8 +279,9 @@
         </li>
       </ul>
       <div class="page-footer__copyright">
-        <a href="#" class="page-footer__copyright-text page-footer__social-link">HTML Academy</a>
-        <a href="#">
+        <a href="https://htmlacademy.ru/intensive/adaptive"
+          class="page-footer__copyright-text page-footer__social-link">HTML Academy</a>
+        <a href="#" aria-label="Логотип HTML Academy">
           <svg class="page-footer__social-icon page-footer__social-link academy-ico" width="27" height="34"
             fill="#666666">
             <use xlink:href="#academy-icon"></use>

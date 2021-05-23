@@ -39,11 +39,11 @@
   }
 
   &:focus {
-    border: 2px solid $default-text-color;
+    outline: 2px solid $default-text-color;
   }
 
   &:invalid {
-    border: 2px solid $default-pink-color;
+    outline: 2px solid $default-pink-color;
   }
 
   @media (min-width: $tablet-width) {
