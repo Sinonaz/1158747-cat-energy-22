@@ -6,6 +6,10 @@
     margin-top: 62px;
     margin-bottom: 21px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 66px;
+  }
 }
 
 .addition-fieldset__wrapper {
@@ -60,7 +64,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 38px;
+    margin-right: 27px;
   }
 }
 

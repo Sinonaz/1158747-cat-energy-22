@@ -16,6 +16,10 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 14px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 18px;
+  }
 }
 
 .title-profile__text {
