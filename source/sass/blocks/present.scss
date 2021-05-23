@@ -29,8 +29,9 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
     min-width: 245px;
-    padding: 65px 10px 46px;
-    margin-top: 0;
+    padding: 64px 10px 46px;
+    margin-top: 49px;
+    max-height: 289px;
     background-image: url("../../img/gift-photo-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -62,6 +63,7 @@
 
   @media (min-width: $desktop-width) {
     text-align: center;
-    margin-right: -12px;
+    margin-right: 5px;
+    transform: translateY(5px);
   }
 }

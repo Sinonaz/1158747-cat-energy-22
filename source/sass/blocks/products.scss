@@ -14,6 +14,7 @@
     min-width: 896px;
     border: none;
     margin-right: 80px;
+    border-top: 1px solid $border-color;
   }
 }
 
@@ -39,6 +40,10 @@
 
 .products__item:last-child {
   padding-top: 3px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 15px;
+  }
 }
 
 .products__item-title {
@@ -74,6 +79,8 @@
 
   @media (min-width: $desktop-width) {
     min-width: 288px;
+    text-align: start;
+    padding-left: 100px;
   }
 }
 
@@ -81,6 +88,10 @@
   text-align: end;
   transform: translateX(6px);
   width: 84px;
+
+  @media (min-width: $desktop-width) {
+    transform: translateX(33px);
+  }
 }
 
 .products__item-button {

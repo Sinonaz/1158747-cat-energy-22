@@ -30,6 +30,7 @@
     margin-right: 80px;
     background-image: linear-gradient(to bottom, transparent 0, transparent 75px, $default-gray-color 75px, $default-gray-color 100%);
     width: 20.08%;
+    margin-bottom: 67px;
   }
 }
 
@@ -46,6 +47,18 @@
 .goods__item:nth-of-type(4n) {
   @media (min-width: $desktop-width) {
     margin-right: 0;
+  }
+}
+
+.good {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.good--last {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -87,6 +100,7 @@
 
   @media (min-width: $desktop-width) {
     left: 10%;
+    top: 12%;
   }
 }
 
@@ -96,10 +110,15 @@
   @media (min-width: $tablet-width) {
     top: 31px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 11%;
+    left: 12%;
+  }
 }
 
 .goods__img-big {
-  top: 28%;
+  top: 24%;
   left: 22%;
 
   @media (min-width: $tablet-width) {
@@ -112,6 +131,8 @@
   @media (min-width: $desktop-width) {
     width: 172px;
     height: 200px;
+    top: -2%;
+    left: 9%;
   }
 }
 
@@ -150,8 +171,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 32px;
-    margin-bottom: 20px;
+    margin-top: 18px;
+    margin-bottom: 18px;
   }
 }
 
@@ -203,6 +224,9 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
+    margin-top: 26px;
+    max-width: 168px;
+    margin-left: 19px;
   }
 
   &:hover {

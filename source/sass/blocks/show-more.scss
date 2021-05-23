@@ -11,10 +11,12 @@
     margin-top: 77px;
     border: 1px solid $border-color;
     width: 45.75%;
+    max-height: 429px;
   }
 
   @media (min-width: $desktop-width) {
     width: 20.08%;
+    height: 431px;
   }
 }
 
@@ -60,6 +62,7 @@
   min-height: 40px;
   transition: $default-transition-settings;
   cursor: pointer;
+  font-size: 16px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
