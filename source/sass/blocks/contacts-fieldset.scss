@@ -33,6 +33,7 @@
   @media (min-width: $tablet-width) {
     max-width: none;
     line-height: 1;
+    margin-bottom: 64px;
   }
 }
 
@@ -47,7 +48,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 
   @media (min-width: $desktop-width) {

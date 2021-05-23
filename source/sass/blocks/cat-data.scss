@@ -21,7 +21,7 @@
   margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 29px;
+    margin-bottom: 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,5 +44,9 @@
 
   &:invalid {
     border: 2px solid $default-pink-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 16px;
   }
 }

@@ -13,4 +13,8 @@
 
 .legend-add {
   margin-right: -19px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: -157px;
+  }
 }
