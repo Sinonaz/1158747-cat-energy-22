@@ -70,7 +70,7 @@
     outline: 2px solid $default-text-color;
   }
 
-  &:invalid {
+  &:invalid:not(:focus):not(:placeholder-shown) {
     border: 2px solid $default-pink-color;
   }
 
@@ -83,7 +83,7 @@
   fill: $default-green-color;
 }
 
-.contacts-fieldset__input:invalid + .contacts-fieldset__item-icon {
+.contacts-fieldset__input:invalid:not(:focus):not(:placeholder-shown) + .contacts-fieldset__item-icon {
   fill: $default-pink-color;
 }
 
@@ -95,7 +95,7 @@
   stroke: $default-green-color;
 }
 
-.contacts-fieldset__input:invalid + .icon-mail {
+.contacts-fieldset__input:invalid:not(:focus):not(:placeholder-shown) + .icon-mail {
   stroke: $default-pink-color;
 }
 

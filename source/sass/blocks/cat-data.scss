@@ -42,7 +42,7 @@
     outline: 2px solid $default-text-color;
   }
 
-  &:invalid {
+  &:invalid:not(:focus):not(:placeholder-shown) {
     outline: 2px solid $default-pink-color;
   }
 
