@@ -103,7 +103,6 @@
   line-height: 1;
   text-transform: uppercase;
   color: $default-white-color;
-  margin-bottom: 303px;
   z-index: 4;
 
   @media (min-width: $tablet-width) {
@@ -121,9 +120,7 @@
 
 .service__img {
   display: block;
-  position: absolute;
-  top: 35%;
-  left: 6%;
+  margin-top: 33px;
 
   @media (min-width: $tablet-width) {
     top: 76%;
@@ -131,6 +128,8 @@
     width: 709px;
     height: 609px;
     z-index: -1;
+    position: absolute;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
