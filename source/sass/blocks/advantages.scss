@@ -120,7 +120,7 @@
   }
 }
 
-.advantages__item:nth-child(odd) {
+.advantages__item {
   @media (min-width: $tablet-width) {
     margin-right: 134px;
   }

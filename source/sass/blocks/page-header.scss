@@ -29,6 +29,11 @@
     flex-shrink: 0;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    margin-right: 573px;
+  }
 }
 
 .page-header__logo {
