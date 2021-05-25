@@ -58,17 +58,21 @@
   margin: 0 auto;
   padding: 18px 0;
   padding-left: 15px;
-  max-width: 136px;
+  max-width: 165px;
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    max-width: 140px;
-    padding-left: 0;
+    max-width: 230px;
+    padding-left: 29px;
   }
 }
 
 .page-footer__social-item {
-  margin-right: 15px;
+  margin-right: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 24px;
+  }
 }
 
 .page-footer__social-link {

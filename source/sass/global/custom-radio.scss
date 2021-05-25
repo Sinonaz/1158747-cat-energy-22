@@ -78,3 +78,7 @@
   opacity: 0.3;
   pointer-events: none;
 }
+
+.custom-radio:focus + .options__label::before {
+  border: 2px solid $default-black-color;
+}

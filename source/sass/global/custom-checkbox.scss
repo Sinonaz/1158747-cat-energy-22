@@ -29,7 +29,7 @@
 }
 
 .custom-checkbox:focus + .addition-fieldset__label::before {
-  border-color: $options-blocked;
+  border: 3px solid $default-black-color;
 }
 
 .custom-checkbox:checked + label::before {

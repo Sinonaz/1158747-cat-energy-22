@@ -79,6 +79,10 @@
   }
 }
 
+.contacts-fieldset__label {
+  width: 76px;
+}
+
 .contacts-fieldset__input:focus + .contacts-fieldset__item-icon {
   fill: $default-green-color;
 }

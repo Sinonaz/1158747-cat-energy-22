@@ -108,7 +108,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     color: $default-black-color;
-    margin-bottom: 49px;
+    margin-bottom: 50px;
   }
 }
 
@@ -160,5 +160,9 @@
 
   &:active {
     color: $text-active-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 5px;
   }
 }

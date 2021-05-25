@@ -9,10 +9,6 @@
     margin-top: calc(1em / 2 + 3px);
     background-color: #68b738;
     z-index: -1;
-
-    @media (min-width: $desktop-width) {
-      top: 5px;
-    }
   }
 }
 
