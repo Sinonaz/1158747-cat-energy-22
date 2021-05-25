@@ -11,7 +11,7 @@
   margin-right: -20px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     background-image: linear-gradient(to bottom, transparent 0, transparent 77px, $default-gray-color 77px, $default-gray-color 100%);
@@ -22,14 +22,15 @@
     margin-right: 0;
     width: 45.75%;
     margin-bottom: 63px;
+  }
 
-    @media (min-width: $desktop-width) {
-      padding-left: 20px;
-      padding-right: 20px;
-      margin-right: 80px;
-      background-image: linear-gradient(to bottom, transparent 0, transparent 75px, $default-gray-color 75px, $default-gray-color 100%);
-      width: 20.08%;
-    }
+  @media (min-width: $desktop-width) {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 80px;
+    background-image: linear-gradient(to bottom, transparent 0, transparent 75px, $default-gray-color 75px, $default-gray-color 100%);
+    width: 20.08%;
+    margin-bottom: 67px;
   }
 }
 
@@ -49,19 +50,31 @@
   }
 }
 
+.good {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.good--last {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
 .goods__item-wrapper {
   display: flex;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 33px;
+    margin-bottom: 9px;
   }
 }
 
 .goods__item-img {
   position: relative;
-  width: 220px;
+  width: 265px;
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
@@ -75,39 +88,62 @@
 
 .goods__img {
   position: absolute;
-  left: 25%;
-  top: 25%;
+  left: 26%;
+  top: 39%;
 
   @media (min-width: $tablet-width) {
     width: 161px;
     height: 172px;
-    top: 15%;
-    left: 20%;
+    top: 14%;
+    left: 18%;
   }
 
   @media (min-width: $desktop-width) {
     left: 10%;
+    top: 12%;
+  }
+}
+
+.goods__img--first {
+  top: 27%;
+
+  @media (min-width: $tablet-width) {
+    top: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 11%;
+    left: 12%;
   }
 }
 
 .goods__img-big {
+  top: 24%;
+  left: 22%;
+
   @media (min-width: $tablet-width) {
     width: 168px;
-    height: 200px;
-    top: 4%;
+    height: 207px;
+    top: 2%;
+    left: 16%;
   }
 
   @media (min-width: $desktop-width) {
     width: 172px;
     height: 200px;
+    top: -2%;
+    left: 9%;
   }
 }
 
 .goods__item-info {
   width: 100%;
+  transform: translate(4px, 4px);
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
+    padding-top: 10px;
+    transform: translate(0, 0);
   }
 
   @media (min-width: $desktop-width) {
@@ -122,7 +158,7 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $special-dark-gray;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   max-width: 76px;
 
   @media (min-width: $tablet-width) {
@@ -135,8 +171,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 32px;
-    margin-bottom: 20px;
+    margin-top: 18px;
+    margin-bottom: 18px;
   }
 }
 
@@ -146,6 +182,7 @@
   line-height: 1.33;
   width: 100%;
   border-spacing: 0;
+  transform: translate(-1px, -2px);
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -178,6 +215,8 @@
   width: 100%;
   min-height: 40px;
   transition: $default-transition-settings;
+  font-size: 16px;
+  line-height: 1.25;
 
   @media (min-width: $tablet-width) {
     padding-top: 10px;
@@ -185,6 +224,9 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
+    margin-top: 26px;
+    max-width: 168px;
+    margin-left: 19px;
   }
 
   &:hover {

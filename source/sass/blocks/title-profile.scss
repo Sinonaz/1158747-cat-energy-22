@@ -1,6 +1,24 @@
 .title-profile {
+  padding-top: 3px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 18px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-top: 141px;
+  }
+}
+
+.title-profile__title {
+  padding-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 18px;
   }
 }
 

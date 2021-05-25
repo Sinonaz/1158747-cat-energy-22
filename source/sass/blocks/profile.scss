@@ -1,3 +1,19 @@
+.profile {
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 64px;
+  }
+}
+
 .profile__form {
   margin-top: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 62px;
+  }
 }

@@ -1,5 +1,5 @@
 .calculations__description {
-  max-width: 708px;
+  max-width: 700px;
   margin-bottom: 25px;
   line-height: 1.29;
 
@@ -30,6 +30,7 @@
   display: flex;
   justify-content: space-between;
   max-width: 300px;
+  padding-top: 3px;
 
   @media (min-width: $tablet-width) {
     min-width: 366px;
@@ -46,7 +47,7 @@
 
   @media (min-width: $desktop-width) {
     min-width: 162px;
-    margin-bottom: 55px;
+    margin-bottom: 59px;
   }
 }
 
@@ -64,8 +65,8 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 1.23;
-    padding-top: 15px;
-    padding-bottom: 25px;
+    padding-top: 11px;
+    padding-bottom: 19px;
   }
 }
 
@@ -95,14 +96,14 @@
   }
 }
 
-.text--first {
+.calculations__text--text-first {
   @media (min-width: $tablet-width) {
     left: 20%;
   }
 }
 
 .calculations__food-costs {
-  padding-top: 40px;
+  padding-top: 36px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -113,6 +114,7 @@
 
   @media (min-width: $desktop-width) {
     min-width: 327px;
+    padding-right: 153px;
   }
 }
 
@@ -130,10 +132,13 @@
 
 .food-cost-number {
   @media (min-width: $tablet-width) {
+    display: block;
     padding-left: 85px;
+    padding-top: 9px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 50px;
+    transform: translate(170px, -28px);
   }
 }

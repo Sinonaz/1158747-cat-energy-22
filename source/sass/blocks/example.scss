@@ -1,14 +1,16 @@
 .example {
   background-color: $dark-gray-color;
-  margin-top: 42px;
+  margin-top: 46px;
 
   @media (min-width: $tablet-width) {
     background-color: $default-white-color;
-    background-image: linear-gradient(to bottom, transparent 0, transparent 484px, #f2f2f2 77px, #f2f2f2 100%);
+    background-image: linear-gradient(to bottom, transparent 0, transparent 604px, #f2f2f2 77px, #f2f2f2 100%);
+    margin-top: 43px;
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $default-gray-color;
+    margin-top: 6px;
+    background-image: linear-gradient(to bottom, transparent 0, transparent 161px, #f2f2f2 77px, #f2f2f2 100%);
   }
 }
 
@@ -38,36 +40,60 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 63px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 74px;
+  }
 }
 
 .example__container {
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 25px;
+    padding-bottom: 47px;
+    position: relative;
   }
 }
 
 .example__calculations {
   @media (min-width: $desktop-width) {
     max-width: 436px;
+    padding-top: 71px;
   }
 }
 
 .example__results {
-  padding-bottom: 25px;
+  padding-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 68px;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-right: 320px;
+    position: absolute;
+    top: -195px;
+    left: 549px;
   }
 }
 
 .example__img {
   display: block;
-  margin: 42px auto 23px auto;
+  margin: 42px auto 31px auto;
+  object-fit: cover;
 
   @media (min-width: $tablet-width) {
     margin-top: 60px;
+    width: 95%;
+    height: 545px;
+    margin-bottom: 10px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    width: 90%;
+    height: 523px;
+    margin-bottom: 33px;
+    margin-top: 0;
   }
 }
 
@@ -77,6 +103,10 @@
   justify-content: space-around;
   margin: 0 auto;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 100px;
+  }
 }
 
 .example__results-was {
@@ -121,14 +151,26 @@
     border-radius: 50%;
     left: 45%;
     border: 1px solid $border-color;
+    transition: $default-transition-settings;
+
+    &:hover {
+      box-shadow: 0 2px 5px 1px $border-color;
+    }
+
+    &:active,
+    &:focus {
+      border-color: $default-green-color;
+      box-shadow: 0 2px 6px 2px $border-color;
+    }
 
     &::before {
       content: "";
       position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       width: 8px;
       height: 8px;
-      top: 40%;
-      left: 40%;
       background-color: $default-green-color;
       border-radius: 50%;
     }
@@ -143,12 +185,13 @@
 .example__buttons {
   font-family: "Oswald", "Arial", sans-serif;
   border-bottom: 1px dotted $text-button-color;
-  padding: 0;
+  padding-left: 9px;
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;
   color: $default-black-color;
   cursor: pointer;
+  background-color: $dark-gray-color;
 
   &:hover {
     border-bottom: 1px solid $border-hover;
@@ -157,5 +200,11 @@
   &:active,
   &:focus {
     border: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: $default-gray-color;
+    font-size: 20px;
+    line-height: 1.5;
   }
 }

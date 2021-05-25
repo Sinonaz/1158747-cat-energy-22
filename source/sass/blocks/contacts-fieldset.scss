@@ -4,12 +4,13 @@
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
+  transform: translateY(8px);
 
   @media (min-width: $tablet-width) {
     min-width: $tablet-width;
     max-width: $desktop-width;
     width: 100%;
-    padding: 0 30px;
+    padding: 0 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,16 +22,24 @@
 .contacts-fieldset__list {
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
 
 .contacts-fieldset__title {
-  max-width: 215px;
+  max-width: 228px;
+  line-height: 32px;
 
   @media (min-width: $tablet-width) {
-    max-width: 565px;
+    max-width: none;
+    line-height: 1;
+    margin-bottom: 64px;
   }
+}
+
+.contact-legend {
+  padding-right: 20px;
 }
 
 .contacts-fieldset__item {
@@ -40,7 +49,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,7 +59,7 @@
 
 .contacts-fieldset__input {
   width: 100%;
-  margin-left: 12px;
+  margin-left: 6px;
   border: 1px solid $nav-line-color;
 
   &:hover {
@@ -58,10 +67,10 @@
   }
 
   &:focus {
-    border: 2px solid $default-text-color;
+    outline: 2px solid $default-text-color;
   }
 
-  &:invalid {
+  &:invalid:not(:focus):not(:placeholder-shown) {
     border: 2px solid $default-pink-color;
   }
 
@@ -74,7 +83,7 @@
   fill: $default-green-color;
 }
 
-.contacts-fieldset__input:invalid + .contacts-fieldset__item-icon {
+.contacts-fieldset__input:invalid:not(:focus):not(:placeholder-shown) + .contacts-fieldset__item-icon {
   fill: $default-pink-color;
 }
 
@@ -86,7 +95,7 @@
   stroke: $default-green-color;
 }
 
-.contacts-fieldset__input:invalid + .icon-mail {
+.contacts-fieldset__input:invalid:not(:focus):not(:placeholder-shown) + .icon-mail {
   stroke: $default-pink-color;
 }
 

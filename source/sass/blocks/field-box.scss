@@ -9,8 +9,8 @@
     min-width: $tablet-width;
     max-width: $desktop-width;
     width: 100%;
-    padding: 0 30px;
-    margin-bottom: 72px;
+    padding: 0 70px;
+    margin-bottom: 76px;
   }
 
   @media (min-width: $desktop-width) {
@@ -18,10 +18,11 @@
     padding: 0 110px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 67px;
   }
 }
 
 .field-box__fieldset {
-  margin-top: 23px;
+  margin-top: 17px;
   border: none;
 }
